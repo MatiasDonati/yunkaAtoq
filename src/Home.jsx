@@ -1,16 +1,37 @@
-import Logo from './assets/yunka.png'
+import Bomberos from "./assets/bomberos.jpg";
 
 const Home = () => {
-    return (
-        <div className='w-full h-full bg-[#D49105] p-[500px]'>
-            <div>
-                <img src={Logo} alt='logo' style={{ width: '' }} />
-            </div>
-            <div className=' text-[#013662] p-10'>
-                El zorro forestal representado por un zorro por sus características propias que son astucia, inteligencia y agilidad.
-                De la misma manera representa a la fauna y flora y voluntad existente para salvaguardar todo ser vivo indistintamente de la especie.
-            </div>
+  return (
+    <>
+      <div className="w-full h-[550px]">
+        {/* Para darle un sombreado negro degrade */}
+        {/* <div className='absolute w-full h-[550px] bg-gradient-to-r from-black'></div> */}
+        <img className="w-full h-full object-cover" src={Bomberos} />
+      </div>
+
+      <div className="text-3xl text-center p-10 italic font-light">
+        "Para que otros puedan vivir"
+      </div>
+      <div className="px-[300px]">
+        <div className="py-3">
+          YUNKA ATOQ es una fundación de protección medioambiental que cuenta
+          con un brazo operativo de primera respuesta ante emergencias y
+          desastres naturales.
         </div>
-    )
-}
-export default Home
+        <div className="py-3">
+          Nació en el año 2023, con el fin de abastecer las emergencias
+          (incendios forestales, rescates, atenciones médicas) y el objetivo de
+          capacitar a jóvenes voluntarios que de manera desinteresada y
+          altruista, arriesguen sus vidas para salvaguardar así, las de otros
+          seres vivos.
+        </div>
+        <div className="py-3">
+          Bajo el lema "Para que otros puedan vivir”, servimos al pueblo
+          Boliviano del cual nacimos, devolviéndole a nuestra tierra un poco de
+          todo lo que nos brindó.
+        </div>
+      </div>
+    </>
+  );
+};
+export default Home;

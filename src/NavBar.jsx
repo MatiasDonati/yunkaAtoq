@@ -1,27 +1,46 @@
+import { BsWhatsapp, BsInstagram } from "react-icons/bs";
+import { AiOutlineFacebook } from "react-icons/ai";
+
 const NavBar = () => {
-    return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f]'>
-            <h1 className='text-3xl font-bold text-[#D49105] p-8 '>
-                Yunka Atoq
-            </h1>
-            <ul className='text-white flex'>
-                <li>
-                    Nosotros
-                </li>
-                <li>
-                    Contra el Fuego
-                </li>
-                <li>
-                    Rescate
-                </li>
-                <li>
-                    Animales
-                </li>
-                <li>
-                    Contacto
-                </li>
-            </ul>
+  return (
+    <>
+
+      <div className="bg-[#0E385B] w-full h-[100px] flex justify-between items-center text-3xl font-bold">
+        <div className=" pl-10">
+          <div className="text-white">YUNKA ATOQ</div>
+          <div className="text-zinc-300	text-sm font-light italic pl-1">
+            <div>Bomberos Volunarios</div>
+            <div>Cochabamba, Bolivia</div>
+          </div>
         </div>
-    )
-}
-export default NavBar
+        <div className="text-white">
+          <ul className="flex pr-10">
+            <li>
+              <BsWhatsapp />
+            </li>
+            <li>
+              <BsInstagram />
+            </li>
+            <li>
+              <AiOutlineFacebook />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Navbar 2da Seccion */}
+
+      <div className='bg-[#0E385B] w-full h-[50px] items-center border-y-4'>
+        <ul className='flex justify-between text-white text-lg px-10 pt-2'>
+          <li>Nosotros</li>
+          <li>Donaciones</li>
+          <li>** LogoZorro **</li>
+          <li>Capacitaciones</li>
+          <li>Incorpórate</li>
+        </ul>
+      </div>
+
+    </>
+  );
+};
+export default NavBar;
