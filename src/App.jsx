@@ -1,10 +1,12 @@
-import Departamentos from './Departamentos'
-import Facebook from './Facebook'
-import Footer from './Footer'
-import Form from './Form'
-import GoogleMaps from './GoogleMaps'
-import Home from './Home'
-import NavBar from './NavBar'
+import Facebook from "./components/Facebook"
+import Footer from "./components/Footer"
+import Form from "./components/Form"
+import GoogleMaps from "./components/GoogleMaps"
+import Home from "./components/Home"
+import NavBar from "./components/NavBar"
+import Departamentos from "./components/Departamentos"
+
+
 
 function App() {
   return (

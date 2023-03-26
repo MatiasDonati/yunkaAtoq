@@ -1,8 +1,8 @@
-import Administracion from "./assets/departamentos/Administracion.png";
-import BusquedaYRescate from "./assets/departamentos/BusquedayRescate.png";
-import Ciencia from "./assets/departamentos/Ciencia.png";
-import Fuego from "./assets/departamentos/Fuego.png";
-import SoporteVital from "./assets/departamentos/SoporteVital.png";
+import Administracion from "../assets/departamentos/Administracion.png";
+import BusquedaYRescate from "../assets/departamentos/BusquedayRescate.png";
+import Ciencia from "../assets/departamentos/Ciencia.png";
+import Fuego from "../assets/departamentos/Fuego.png";
+import SoporteVital from "../assets/departamentos/SoporteVital.png";
 
 const Departamentos = () => {
   return (
