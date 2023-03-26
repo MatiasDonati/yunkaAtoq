@@ -3,8 +3,12 @@ import { AiOutlineFacebook } from "react-icons/ai";
 
 const NavBar = () => {
   return (
-    <>
+    <div
+    className=
+    "fixed w-full h-[100px] items-center"
+    >
 
+    {/* Navbar 1era Secciom */}
       <div className="bg-[#0E385B] w-full h-[100px] flex justify-between items-center text-3xl font-bold">
         <div className=" pl-10">
           <div className="text-white">YUNKA ATOQ</div>
@@ -40,7 +44,7 @@ const NavBar = () => {
         </ul>
       </div>
 
-    </>
+    </div>
   );
 };
 export default NavBar;
