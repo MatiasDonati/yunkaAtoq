@@ -1,6 +1,6 @@
 import { BsWhatsapp, BsInstagram } from "react-icons/bs";
 import { AiOutlineFacebook } from "react-icons/ai";
-import zorro from "../assets/logo.png"
+import YunkaLogo from "../assets/YunkaLogo.png"
 const NavBar = () => {
   return (
     <div className="fixed w-full h-[100px] items-center">
@@ -41,9 +41,6 @@ const NavBar = () => {
         <ul className="flex justify-between text-white text-lg px-10 pt-2">
           <li>Nosotros</li>
           <li>Donaciones</li>
-          <li>
-            <img className="h-[160px] " src={zorro} alt="zorro" />
-          </li>
           <li>Capacitaciones</li>
           <li>Incorpórate</li>
         </ul>
