@@ -1,6 +1,6 @@
 const Form = () => {
   return (
-    <div className="h-[500px] mb-8 ">
+    <div className="h-[500px] mb-8 " name='form'>
       {/* <div className="text-center pt-[200px]">Formulario</div> */}
       <form action="POST" className="">
         <h1 className="text-3xl text-center p-20 italic font-light">

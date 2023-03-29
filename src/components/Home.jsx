@@ -2,7 +2,7 @@ import Bomberos from "../assets/bomberos.jpg";
 
 const Home = () => {
   return (
-    <div className="pt-[150px]">
+    <div className="pt-[150px]" name='home'>
       <div className="w-full h-[550px]">
         {/* Para darle un sombreado negro degrade */}
         {/* <div className='absolute w-full h-[550px] bg-gradient-to-r from-black'></div> */}
