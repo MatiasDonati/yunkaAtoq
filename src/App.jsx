@@ -1,4 +1,4 @@
-import Facebook from "./components/Facebook"
+import FacebookPosts from "./components/FacebookPosts"
 import Footer from "./components/Footer"
 import Form from "./components/Form"
 import GoogleMaps from "./components/GoogleMaps"
@@ -14,7 +14,7 @@ function App() {
     <NavBar />
     <Home />
     <Departamentos />
-    <Facebook />
+    <FacebookPosts />
     <Form />
     <GoogleMaps />
     <Footer />
