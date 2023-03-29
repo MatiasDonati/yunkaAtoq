@@ -8,6 +8,9 @@ const Departamentos = () => {
   return (
     <>
       <div className="px-[300px] p-20">
+      <div className="text-4xl text-center p-10 italic font-light">
+        Especialidades
+      </div>
         {/*Card 1 */}
         <div className="rounded-xl flex border-4 border-[#0E385B]">
           <img src={BusquedaYRescate} className="w-1/5 h-1/5 "/>
