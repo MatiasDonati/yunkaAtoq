@@ -1,4 +1,4 @@
-import Bomberos from "./assets/bomberos.jpg";
+import Bomberos from "../assets/bomberos.jpg";
 
 const Home = () => {
   return (

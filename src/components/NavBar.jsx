@@ -1,7 +1,6 @@
 import { BsWhatsapp, BsInstagram } from "react-icons/bs";
 import { AiOutlineFacebook } from "react-icons/ai";
-import YunkaLogo from "./assets/YunkaLogo.png";
-
+import YunkaLogo from "../assets/YunkaLogo.png"
 const NavBar = () => {
   return (
     <div className="fixed w-full h-[100px] items-center">
