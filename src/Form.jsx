@@ -1,5 +1,4 @@
 const Form = () => {
-
   return (
     <div className="h-[500px] mb-8 ">
       {/* <div className="text-center pt-[200px]">Formulario</div> */}
@@ -39,7 +38,7 @@ const Form = () => {
             rows="3"
             placeholder="Mensaje"
           ></textarea>
-          <button className="text-white text-center mt-8 mx-[880px] bg-[#0E385B] hover:bg-[#D49105] hover:text-black rounded-full ">
+          <button className="text-white text-center mt-8 mx-[880px] bg-[#0E385B] hover:bg-[#D49105] hover:text-black rounded-full transition-all duration-500 ease-in-out ">
             Enviar
           </button>
         </div>
