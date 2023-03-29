@@ -42,7 +42,7 @@ const NavBar = () => {
       <div className="flex w-full flex-row bg-[#0E385B] h-[50px] items-center border-y-4 text-white text-lg">
         <div className="flex-1 px-20">
           <ul className="flex justify-between">
-            <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out">Nosotros</li>
+            <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out">Nosotres</li>
             <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out">Especialidades</li>
             <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out">Donaciones</li>
           </ul>
