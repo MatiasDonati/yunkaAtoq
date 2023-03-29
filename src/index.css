@@ -8,3 +8,9 @@
     @apply cursor-pointer
   }
 }
+
+:root{
+  background-image: url(../src/assets/Home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

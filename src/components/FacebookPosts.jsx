@@ -1,31 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-function FacebookPosts({ pageId }) {
-  const [posts, setPosts] = useState([]);
+function FacebookPosts() {
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const response = await fetch(`https://graph.facebook.com/${pageId}/posts?access_token={f29a84ce0c9e191f33ebe508eaabba5c}`);
-        const data = await response.json();
-        setPosts(data.data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchPosts();
-  }, [pageId]);
 
   return (
-    <div>
-      {posts.map(post => (
-        <div key={post.id}>
-          <h3>{post.message}</h3>
-          <p>{post.created_time}</p>
-        </div>
-      ))}
+    <>
+    <div className='flex justify-center'>
+      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fyunkabo%2Fposts%2Fpfbid0a7asns2cuT9jVrmYhrjP1bEERKZVmyVQoADNroU69spFUcgbjzFv3wGodwC4bdP1l&show_text=true&width=500" width="500" height="780" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      {/* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fyunkabo%2Fposts%2Fpfbid037dsTHjnb9N3hVdmM7uEyUmNnazhxaS4LAhRX2DKK3gV8E8z3kiPHDw9oLsoY4iFTl&show_text=true&width=500" width="500" height="581" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> */}
     </div>
+    </>
   );
 }
 
