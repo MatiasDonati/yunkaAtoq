@@ -6,8 +6,11 @@ import SoporteVital from "../assets/departamentos/SoporteVital.png";
 
 const Departamentos = () => {
   return (
-    <>
+    <div name='especialidades'>
       <div className="px-[300px] p-20">
+      <div className="text-4xl text-center p-10 italic font-light">
+        Especialidades
+      </div>
         {/*Card 1 */}
         <div className="rounded-xl flex border-4 border-[#0E385B]">
           <img src={BusquedaYRescate} className="w-1/5 h-1/5 "/>
@@ -63,7 +66,8 @@ const Departamentos = () => {
           </div>
         </div>
       </div>
-    </>
+
+    </div>
   );
 };
 export default Departamentos;
