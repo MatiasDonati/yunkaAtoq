@@ -1,4 +1,4 @@
-import { BsWhatsapp, BsInstagram } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
 import { AiOutlineFacebook } from "react-icons/ai";
 import YunkaLogo from "../assets/YunkaLogo.png";
 import { Link } from 'react-scroll'
