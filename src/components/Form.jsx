@@ -38,9 +38,11 @@ const Form = () => {
             rows="3"
             placeholder="Mensaje"
           ></textarea>
-          <button className="text-white text-center mt-8 mx-[600px] bg-[#0E385B] hover:mx-[550px] hover:bg-[#D49105] hover:text-black rounded-full transition-all duration-500 ease-in-out ">
+          <div className="flex justify-center items-center">
+          <button className="text-white mt-5 px-10 bg-[#0E385B] hover:px-20 hover:bg-[#D49105] hover:text-black rounded-full transition-all duration-500 ease-in-out ">
             Enviar
           </button>
+          </div>
         </div>
       </form>
     </div>
