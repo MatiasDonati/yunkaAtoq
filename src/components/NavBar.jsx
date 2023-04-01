@@ -78,7 +78,7 @@ const NavBar = () => {
       </div>
 
       {/* Menu flotante */}
-      <div className="hidden lg:flex fixed flex-col bottom-[35%] left-0 ">
+      <div className="hidden lg:flex fixed flex-col bottom-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-r-full duration-500  text-[#204D70] bg-zinc-300 rounded-tr-[100px]">
             <a

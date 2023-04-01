@@ -40,8 +40,8 @@ const Footer = () => {
           <img className="w-[120px]" src={YunkaLogo} />
         </div>
         <div className="flex h-14 bg-[#0E385B] ">
-          <div className="bg-[#C28507] flex-1 rounded-tr-full mr-[300px]"></div>
-          {/* <div className="bg-[#0E385B] flex-1"></div> */}
+          <div className="bg-[#C28507] flex-1 rounded-tr-full"></div>
+          <div className="bg-[#0E385B] flex-1 flex justify-center mt-4 text-zinc-300">Creado por Grupo Sarasa ®</div>
           <div className="bg-[#C28507] flex-1 rounded-tl-full"></div>
         </div>
       </div>
