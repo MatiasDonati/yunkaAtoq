@@ -4,7 +4,6 @@ import YunkaLogo from "../assets/YunkaLogo.png";
 import { Link } from 'react-scroll'
 import Linkedin from '../assets/Linkedin.png'
 
-
 const NavBar = () => {
   return (
     <div className="fixed w-full items-center z-10">
@@ -32,7 +31,7 @@ const NavBar = () => {
 
         <div className="flex-1 text-white pr-10">
           <ul className="flex justify-end">
-            <li className="">
+            <li>
               <BsTelephone className="hover:text-[40px] transition-all duration-400 ease-in-out" />
             </li>
             <li>
@@ -68,8 +67,8 @@ const NavBar = () => {
             <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-ou">
               Capacitaciones
             </li>
-            <Link to='form' smooth={true} duration={500}>
-            <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out">
+            <Link className='flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out' to='form' smooth={true} duration={500}>
+            <li>
               Incorpórate
             </li>
             </Link>
