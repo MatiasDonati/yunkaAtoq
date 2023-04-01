@@ -1,18 +1,71 @@
-import Bomberos from "../assets/bomberos.jpg";
+import { useState } from "react";
+import Bomberos1 from "../assets/bomberos1.jpg";
+import Bomberos2 from "../assets/bomberos2.jpg";
+import Bomberos3 from "../assets/bomberos3.jpg";
+import Bomberos4 from "../assets/bomberos4.jpg";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { RxDash, RxDotFilled } from "react-icons/rx";
 
 const Home = () => {
+  const fotos = [Bomberos1, Bomberos2, Bomberos3, Bomberos4];
+
+  const [indiceActual, setIndiceActual] = useState(0);
+
+  const fotoAnterior = () => {
+    const primeraFoto = indiceActual === 0;
+    const nuevoIndice = primeraFoto ? fotos.length - 1 : indiceActual - 1;
+    setIndiceActual(nuevoIndice);
+  };
+
+  const fotoSiguiente = () => {
+    const ultimaFoto = indiceActual === fotos.length - 1;
+    const nuevoIndice = ultimaFoto ? 0 : indiceActual + 1;
+    setIndiceActual(nuevoIndice);
+  };
+
+  const irAFoto = (indice) => {
+    setIndiceActual(indice);
+  };
+
   return (
-    <div className="pt-[120px]" name='home'>
-      <div className="w-full h-[700px]">
+    <div className="pt-[120px]" name="home">
+      <div className="w-full h-[700px] group">
         {/* Para darle un sombreado negro degrade */}
-        {/* <div className='absolute w-full h-[700px] bg-gradient-to-r from-black'> */}
-        <div className="absolute w-full p-20">
-          <div className="text-zinc-300 text-4xl italic text-center mt-[150px]">Bomberos Voluntarios</div>
-          <div className="text-zinc-300 text-center text-[20px] italic mt-2">COCHABMABA, BOLIVIA</div>
-          <div className="text-zinc-300 text-center text-[20px] mx-[300px] italic mt-4">Nuestro objetivo es ofrecer un servicio de calidad y eficiente a la comunidad, y estamos dispuestos a trabajar duro para lograrlo. Esperamos tener la oportunidad de colaborar con ustedes en el futuro y brindar nuestros servicios a la comunidad.</div>
-        {/* </div> */}
+        <div className='absolute w-full h-[700px] bg-gradient-to-r from-black'>
+        <div className="absolute w-full p-20 ">
+          {/* Flecha Izquierda */}
+          <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+            <BsChevronCompactLeft onClick={fotoAnterior} size={30} />
+          </div>
+
+          {/* Flecha Derecha */}
+          <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+            <BsChevronCompactRight onClick={fotoSiguiente} size={30} />
+          </div>
+
+          <div className="text-zinc-300 text-4xl italic text-center mt-[150px]">
+            Bomberos Voluntarios
+          </div>
+          <div className="text-zinc-300 text-center text-[20px] italic mt-2">
+            COCHABMABA, BOLIVIA
+          </div>
+          <div className="text-zinc-300 text-center text-[20px] mx-[300px] italic mt-4">
+            Nuestro objetivo es ofrecer un servicio de calidad y eficiente a la
+            comunidad, y estamos dispuestos a trabajar duro para lograrlo.
+            Esperamos tener la oportunidad de colaborar con ustedes en el futuro
+            y brindar nuestros servicios a la comunidad.
+          </div>
+          </div>
         </div>
-        <img className="w-full h-full object-cover" src={Bomberos} />
+        <img className="w-full h-full object-cover" src={fotos[indiceActual]} />
+
+        <div className="flex justify-center">
+          {fotos.map((foto, indice) => (
+            <div key={indice} className="text-2xl cursor-pointer">
+              <RxDash onClick={() => irAFoto(indice)} size={50} />
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="text-3xl text-center p-10 italic font-light">

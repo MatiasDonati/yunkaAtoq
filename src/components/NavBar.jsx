@@ -2,9 +2,9 @@ import { BsWhatsapp, BsTelephone } from "react-icons/bs";
 import { AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
 import YunkaLogo from "../assets/YunkaLogo.png";
 import { Link } from "react-scroll";
-import Linkedin from "../assets/Linkedin.png";
 
 const NavBar = () => {
+
   return (
     <div className="fixed w-full items-center z-10">
       {/* Navbar 1era Secciom */}
@@ -78,7 +78,7 @@ const NavBar = () => {
       </div>
 
       {/* Menu flotante */}
-      <div className="hidden lg:flex fixed flex-col bottom-[35%] left-0">
+      <div className="hidden lg:flex fixed flex-col bottom-[10%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-r-full duration-500  text-[#204D70] bg-zinc-300 rounded-tr-[100px]">
             <a
