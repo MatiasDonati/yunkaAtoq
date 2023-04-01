@@ -2,10 +2,16 @@ import Bomberos from "../assets/bomberos.jpg";
 
 const Home = () => {
   return (
-    <div className="pt-[150px]" name='home'>
-      <div className="w-full h-[550px]">
+    <div className="pt-[120px]" name='home'>
+      <div className="w-full h-[700px]">
         {/* Para darle un sombreado negro degrade */}
-        {/* <div className='absolute w-full h-[550px] bg-gradient-to-r from-black'></div> */}
+        {/* <div className='absolute w-full h-[700px] bg-gradient-to-r from-black'> */}
+        <div className="absolute w-full p-20">
+          <div className="text-[#CACACA] text-4xl italic text-center mt-[150px]">Bomberos Voluntarios</div>
+          <div className="text-[#CACACA] text-center text-[20px] italic mt-2">COCHABMABA, BOLIVIA</div>
+          <div className="text-[#CACACA] text-center text-[20px] mx-[30em] italic mt-4">Nuestro objetivo es ofrecer un servicio de calidad y eficiente a la comunidad, y estamos dispuestos a trabajar duro para lograrlo. Esperamos tener la oportunidad de colaborar con ustedes en el futuro y brindar nuestros servicios a la comunidad.</div>
+        {/* </div> */}
+        </div>
         <img className="w-full h-full object-cover" src={Bomberos} />
       </div>
 
