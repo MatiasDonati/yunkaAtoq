@@ -15,7 +15,9 @@ function FacebookPosts() {
               />
               <h1 className="text-white text-4xl ml-5">Yunka Atoq</h1>
             </div>
-            <AiOutlineLike className="text-[35px] text-white" />
+            <div>
+            <AiOutlineLike className="text-[35px] text-white " />
+            </div>
           </div>
         </div>
         <div className="flex justify-center items-center">

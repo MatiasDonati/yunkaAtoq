@@ -5,6 +5,7 @@ import YunkaLogo from "../assets/YunkaLogo.png";
 const Footer = () => {
   return (
     <div>
+
       {/* 1era Seccion */}
       <div className="bg-[#0E385B] w-full h-[80px] items-center text-white flex justify-center">
         <div className="flex items-center pr-20">
@@ -20,6 +21,7 @@ const Footer = () => {
           <div className="text-[20px]">+591 62643328</div>
         </div>
       </div>
+
       {/* 2da Seccion */}
       <div className="bg-[#0E385B] w-full h-[280px] border-t-4 text-white">
         <ul className="flex justify-center text-[#CACACA] mt-5">
@@ -37,10 +39,10 @@ const Footer = () => {
         <div className="flex justify-center">
           <img className="w-[120px]" src={YunkaLogo} />
         </div>
-        <div className="flex">
-          <div className="bg-[#C28507] flex-1 rounded-tr-lg">.</div>
-          <div className="bg-[#0E385B] flex-1"></div>
-          <div className="bg-[#C28507] flex-1 rounded-tl-lg">.</div>
+        <div className="flex h-14 bg-[#0E385B] ">
+          <div className="bg-[#C28507] flex-1 rounded-tr-full mr-[300px]"></div>
+          {/* <div className="bg-[#0E385B] flex-1"></div> */}
+          <div className="bg-[#C28507] flex-1 rounded-tl-full"></div>
         </div>
       </div>
     </div>
