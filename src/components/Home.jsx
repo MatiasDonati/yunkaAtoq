@@ -9,7 +9,7 @@ const Home = () => {
         <div className="absolute w-full p-20">
           <div className="text-[#CACACA] text-4xl italic text-center mt-[150px]">Bomberos Voluntarios</div>
           <div className="text-[#CACACA] text-center text-[20px] italic mt-2">COCHABMABA, BOLIVIA</div>
-          <div className="text-[#CACACA] text-center text-[20px] mx-[540px] italic mt-4">Nuestro objetivo es ofrecer un servicio de calidad y eficiente a la comunidad, y estamos dispuestos a trabajar duro para lograrlo. Esperamos tener la oportunidad de colaborar con ustedes en el futuro y brindar nuestros servicios a la comunidad.</div>
+          <div className="text-[#CACACA] text-center text-[20px] mx-[300px] italic mt-4">Nuestro objetivo es ofrecer un servicio de calidad y eficiente a la comunidad, y estamos dispuestos a trabajar duro para lograrlo. Esperamos tener la oportunidad de colaborar con ustedes en el futuro y brindar nuestros servicios a la comunidad.</div>
         {/* </div> */}
         </div>
         <img className="w-full h-full object-cover" src={Bomberos} />
