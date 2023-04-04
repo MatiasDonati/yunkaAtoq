@@ -13,8 +13,8 @@ import Nosotros from "./components/Nosotros"
 function App() {
   return (
     <>
-    <Routes>
     <NavBar />
+    <Routes>
       <Route path="/" element={<Home />}  />
       <Route path="/nosotros" element={<Nosotros/>} />
     </Routes>
