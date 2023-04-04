@@ -5,6 +5,8 @@ import GoogleMaps from "./components/GoogleMaps"
 import Home from "./components/Home"
 import NavBar from "./components/NavBar"
 import Departamentos from "./components/Departamentos"
+import { Route, Routes } from "react-router"
+import Nosotros from "./components/Nosotros"
 
 
 
@@ -12,11 +14,10 @@ function App() {
   return (
     <>
     <NavBar />
-    <Home />
-    <Departamentos />
-    <FacebookPosts />
-    <Form />
-    <GoogleMaps />
+    <Routes>
+      <Route path="/home" element={<Home />}  />
+      <Route path="/nosotros" element={<Nosotros/>} />
+    </Routes>
     <Footer />
     </>
   )
