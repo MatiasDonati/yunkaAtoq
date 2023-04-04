@@ -13,11 +13,12 @@ import Nosotros from "./components/Nosotros"
 function App() {
   return (
     <>
-    <NavBar />
     <Routes>
-      <Route path="/home" element={<Home />}  />
+    <NavBar />
+      <Route path="/" element={<Home />}  />
       <Route path="/nosotros" element={<Nosotros/>} />
     </Routes>
+  
     <Footer />
     </>
   )
