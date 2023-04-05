@@ -4,7 +4,6 @@ import YunkaLogo from "../assets/YunkaLogo.png";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
-
   return (
     <div className="fixed w-full items-center z-10">
       {/* Navbar 1era Secciom */}
@@ -23,7 +22,7 @@ const NavBar = () => {
           <Link to="home" smooth={true} duration={500}>
             <img
               src={YunkaLogo}
-              className="w-[180px] pt-40 transition-all duration-400 ease-in-out hover:w-[200px] cursor-pointer"
+              className={`w-[180px] pt-40 transition-all duration-400 ease-in-out hover:w-[200px] cursor-pointer`}
             />
           </Link>
         </div>

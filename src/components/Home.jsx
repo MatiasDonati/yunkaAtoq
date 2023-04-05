@@ -31,30 +31,30 @@ const Home = () => {
     <div className="pt-[120px]" name="home">
       <div className="w-full h-[700px] group">
         {/* Para darle un sombreado negro degrade */}
-        <div className='absolute w-full h-[700px] bg-gradient-to-r from-black'>
-        <div className="absolute w-full p-20 ">
-          {/* Flecha Izquierda */}
-          <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-            <BsChevronCompactLeft onClick={fotoAnterior} size={30} />
-          </div>
+        <div className="absolute w-full h-[700px] bg-gradient-to-r from-black">
+          <div className="absolute w-full p-20 ">
+            {/* Flecha Izquierda */}
+            <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+              <BsChevronCompactLeft onClick={fotoAnterior} size={30} />
+            </div>
 
-          {/* Flecha Derecha */}
-          <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-            <BsChevronCompactRight onClick={fotoSiguiente} size={30} />
-          </div>
+            {/* Flecha Derecha */}
+            <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+              <BsChevronCompactRight onClick={fotoSiguiente} size={30} />
+            </div>
 
-          <div className="text-zinc-300 text-4xl italic text-center mt-[150px]">
-            Bomberos Voluntarios
-          </div>
-          <div className="text-zinc-300 text-center text-[20px] italic mt-2">
-            COCHABMABA, BOLIVIA
-          </div>
-          <div className="text-zinc-300 text-center text-[20px] mx-[300px] italic mt-4">
-            Nuestro objetivo es ofrecer un servicio de calidad y eficiente a la
-            comunidad, y estamos dispuestos a trabajar duro para lograrlo.
-            Esperamos tener la oportunidad de colaborar con ustedes en el futuro
-            y brindar nuestros servicios a la comunidad.
-          </div>
+            <div className="text-zinc-300 text-4xl italic text-center mt-[150px]">
+              Bomberos Voluntarios
+            </div>
+            <div className="text-zinc-300 text-center text-[20px] italic mt-2">
+              COCHABMABA, BOLIVIA
+            </div>
+            <div className="text-zinc-300 text-center text-[20px] mx-[300px] italic mt-4">
+              Nuestro objetivo es ofrecer un servicio de calidad y eficiente a
+              la comunidad, y estamos dispuestos a trabajar duro para lograrlo.
+              Esperamos tener la oportunidad de colaborar con ustedes en el
+              futuro y brindar nuestros servicios a la comunidad.
+            </div>
           </div>
         </div>
         <img className="w-full h-full object-cover" src={fotos[indiceActual]} />

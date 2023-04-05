@@ -6,8 +6,6 @@ import Home from "./components/Home"
 import NavBar from "./components/NavBar"
 import Departamentos from "./components/Departamentos"
 
-
-
 function App() {
   return (
     <>
