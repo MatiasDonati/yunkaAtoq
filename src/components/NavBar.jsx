@@ -92,10 +92,10 @@ const NavBar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-r-full duration-500  text-[#204D70] bg-zinc-300">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full texxt-gray-300"
               href="/"
             >
-              Escríbenos
+              Mensaje
               <BsWhatsapp size={30} />
             </a>
           </li>
