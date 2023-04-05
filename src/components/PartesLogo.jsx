@@ -51,7 +51,7 @@ const PartesLogo = () => {
       {parteLogos.map((el, indice) => (
         <div
           key={indice}
-          className="px-10 h-[300px] border-2 rounded-lg flex-1"
+          className="px-10 h-[300px] border-2 rounded-lg flex-1 mr-2"
         >
           <div>
             <img src={el.logo} alt="" className="mt-6 " />
