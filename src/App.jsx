@@ -7,7 +7,6 @@ import NavBar from "./components/NavBar";
 import Departamentos from "./components/Departamentos";
 import { Route, Routes } from "react-router";
 import Nosotros from "./components/Nosotros";
-import PartesLogo from "./components/PartesLogo";
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/nosotros" element={<Nosotros />} />
       </Routes>
-      <PartesLogo />
       <Footer />
     </>
   );
