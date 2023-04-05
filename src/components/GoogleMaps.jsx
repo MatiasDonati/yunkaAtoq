@@ -8,9 +8,9 @@ const GoogleMaps = () => {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93917.93648426073!2d-66.21877876378832!3d-17.402143315672685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e373e0d9e4ab27%3A0xa2719ae9532c3e65!2sCochabamba%2C%20Bolivia!5e1!3m2!1ses!2sar!4v1680203861790!5m2!1ses!2sar"
             width="840"
             height="400"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
       {/* </div>
     </div> */}

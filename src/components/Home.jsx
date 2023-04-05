@@ -5,6 +5,10 @@ import Bomberos3 from "../assets/bomberos3.jpg";
 import Bomberos4 from "../assets/bomberos4.jpg";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDash, RxDotFilled } from "react-icons/rx";
+import GoogleMaps from "./GoogleMaps";
+import Form from "./Form";
+import FacebookPosts from "./FacebookPosts";
+import Departamentos from "./Departamentos";
 
 const Home = () => {
   const fotos = [Bomberos1, Bomberos2, Bomberos3, Bomberos4];
@@ -90,7 +94,12 @@ const Home = () => {
           todo lo que nos brindó.
         </div>
       </div>
+      <Departamentos />
+      <FacebookPosts />
+      <Form />
+      <GoogleMaps />
     </div>
+  
   );
 };
 export default Home;
