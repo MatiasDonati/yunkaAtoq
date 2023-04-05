@@ -12,20 +12,20 @@ const NavBar = () => {
       <div className="bg-[#0E385B] w-full h-[70px] flex justify-between items-center text-3xl font-bold">
         <div className="pl-10 flex-1">
           <Link to="home" smooth={true} duration={500}>
+              <NavLink to={"/"}>
               <div className="text-white cursor-pointer">YUNKA ATOQ</div>
+              </NavLink>
           </Link>
-          {/* <div className="text-zinc-300	text-sm font-light italic pl-1">
-            <div>Bomberos Volunarios</div>
-            <div>Cochabamba, Bolivia</div>
-          </div> */}
         </div>
 
         <div className=" flex flex-1 justify-center">
           <Link to="home" smooth={true} duration={500}>
+            <NavLink to={"/"}>
             <img
               src={YunkaLogo}
               className="w-[180px] pt-40 transition-all duration-400 ease-in-out hover:w-[200px] cursor-pointer"
             />
+            </NavLink>
           </Link>
         </div>
 
