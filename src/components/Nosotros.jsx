@@ -1,4 +1,5 @@
 import React from 'react'
+import Foto from '../assets/Group-38.png'
 
 const Nosotros = () => {
     return (
@@ -48,7 +49,7 @@ const Nosotros = () => {
 
                     </div>
                     <div>
-                    <img src="../src/assets/Group-38.png" alt="bomberos" />
+                    <img src={Foto} alt="bomberos" />
                     </div>
                     </div>
                 </div>
