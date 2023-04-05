@@ -72,7 +72,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="text-3xl text-center p-10 italic font-light">
+      <div className="text-5xl text-center p-10 italic font-light">
         "Para que otros puedan vivir"
       </div>
       <div className="px-[300px]">
@@ -99,7 +99,6 @@ const Home = () => {
       <Form />
       <GoogleMaps />
     </div>
-  
   );
 };
 export default Home;

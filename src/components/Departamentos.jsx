@@ -8,8 +8,8 @@ const Departamentos = () => {
   return (
     <div name='especialidades'>
       <div className="px-[300px] p-20">
-      <div className="text-4xl text-center p-10 italic font-light">
-        Especialidades
+      <div className="text-5xl p-10 font-light mb-20 text-[#0E385B]">
+        | Especialidades
       </div>
         {/*Card 1 */}
         <div className="rounded-xl flex border-4 border-[#0E385B]">

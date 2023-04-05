@@ -1,12 +1,13 @@
 import React from "react";
 import Foto from "../assets/Group-38.png";
+import ArbolDeLaVida from "./ArbolDeLaVida";
 import PartesLogo from "./PartesLogo";
 
 const Nosotros = () => {
   return (
     <>
-      <div className="py-[200px] h-full">
-        <div className=" h-[100vh] mb-[700px] ">
+      <div className="py-[200px] px-20 h-full">
+        <div className="h-[100vh] mb-[700px]">
           <div>
             {" "}
             {/* primer seccion */}
@@ -75,6 +76,7 @@ const Nosotros = () => {
         </div>
       </div>
       <PartesLogo />
+      <ArbolDeLaVida />
     </>
   );
 };
