@@ -1,9 +1,9 @@
 import React from "react";
-import Foto from "../assets/Group-38.png";
 import ArbolDeLaVida from "./ArbolDeLaVida";
 import PartesLogo from "./PartesLogo";
 import QuienSomos from "./QuienSomos";
 import Directiva from "./Directiva";
+import SerParte from "./SerParte";
 
 const Nosotros = () => {
     return (
@@ -12,6 +12,7 @@ const Nosotros = () => {
             <Directiva/>
             <PartesLogo />
             <ArbolDeLaVida />
+            <SerParte />
         </>
     );
 };
