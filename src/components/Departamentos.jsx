@@ -6,14 +6,14 @@ import SoporteVital from "../assets/departamentos/SoporteVital.png";
 
 const Departamentos = () => {
   return (
-    <div name='especialidades'>
+    <div name="especialidades">
       <div className="px-[300px] p-20">
-      <div className="text-5xl p-10 font-light mb-20 text-[#0E385B]">
-        | Especialidades
-      </div>
+        <div className="text-5xl p-10 font-light mb-20 text-[#0E385B]">
+          | Especialidades
+        </div>
         {/*Card 1 */}
         <div className="rounded-xl flex border-4 border-[#0E385B]">
-          <img src={BusquedaYRescate} className="w-1/5 h-1/5 "/>
+          <img src={BusquedaYRescate} className="w-1/5 h-1/5 " />
           <div className="p-4 my-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos facere
             quidem perferendis earum voluptatibus maiores magnam corrupti
@@ -35,8 +35,13 @@ const Departamentos = () => {
 
         {/*Card 3 */}
         <div className="rounded-xl flex mt-8 border-4 border-[#0E385B]">
-          <img src={Ciencia} className="w-1/5 h-1/5 bg-[#EBBC4A]" />
-          <div className="p-4 my-6 ">
+          <div className="w-1/5 flex items-stretch">
+            <img
+              src={Ciencia}
+              className="h-full w-full object-cover bg-[#EBBC4A]"
+            />
+          </div>
+          <div className="p-4 my-6 w-4/5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos facere
             quidem perferendis earum voluptatibus maiores magnam corrupti
             voluptates, minus nam, hic dicta similique ullam, illo distinctio
@@ -66,7 +71,6 @@ const Departamentos = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

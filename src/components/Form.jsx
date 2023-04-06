@@ -21,7 +21,7 @@ const Form = () => {
         className="text-white  mt-5 px-10 bg-[#0E385B] hover:px-20 hover:bg-[#D49105] hover:text-black rounded-full transition-all duration-500 ease-in-out"
       >
         hola
-      </button> */}
+      </button>
       {alerta &&
         Swal.fire({
           position: "center",
@@ -29,8 +29,8 @@ const Form = () => {
           title:
             "Muchas gracias por contactarnos!\nEn breve nos pondremos en contacto.",
           showConfirmButton: false,
-          timer: 3000,
-        })}
+          timer: 1000,
+        })} */}
 
       <form
         method="POST"
@@ -43,7 +43,7 @@ const Form = () => {
         </h1>
         <div className="flex flex-col ">
           <input
-            className="mx-[300px] p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none"
+            className="mx-[300px] p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none rounded-t-lg"
             type="text"
             placeholder="Nombre y Apellido"
             name="name"
@@ -72,7 +72,7 @@ const Form = () => {
           {/*  */}
 
           <textarea
-            className="mx-[300px] p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none"
+            className="mx-[300px] p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none rounded-lg"
             name="message"
             rows="3"
             placeholder="Mensaje"

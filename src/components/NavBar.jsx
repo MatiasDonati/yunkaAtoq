@@ -29,21 +29,23 @@ const NavBar = () => {
         </div>
 
         <div className="flex-1 text-white pr-10">
+         
           <ul className="flex justify-end">
-            <li>
+            <li className="h-10 w-16">
               <BsTelephone className="hover:text-[40px] transition-all duration-400 ease-in-out" />
             </li>
-            <li>
+            <li className="h-10 w-16">
               <BsWhatsapp className="hover:text-[40px] transition-all duration-400 ease-in-out" />
             </li>
-            <li>
+            <li className="h-10 w-16">
               <AiOutlineFacebook className="hover:text-[40px] transition-all duration-400 ease-in-out" />
             </li>
-            <li>
+            <li className="h-10 w-16">
               <AiOutlineLinkedin className="hover:text-[40px] transition-all duration-400 ease-in-out" />
             </li>
           </ul>
         </div>
+       
       </div>
 
       {/* Navbar 2da Seccion */}

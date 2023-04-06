@@ -18,36 +18,36 @@ const ArbolDeLaVida = () => {
 
         <img src={ArbolVida} alt="" className="mx-auto block" />
 
-        <div className="flex mx-[300px] mb-10">
+        <div className="flex mb-10">
 
         {/*  Crad */}
-          <div className="flex-1 h-[300px] border-2 rounded-lg mr-2">
-            <div className="text-center">FUEGO</div>
-            <img src={FuegoBlanco} alt="" className="mx-auto block"/>
-            <div className="text-center">
+          <div className="flex-1 border-2 rounded-lg mr-2">
+            <div className="text-center p-2">FUEGO</div>
+            <img src={FuegoBlanco} alt="" className="mx-auto block p-2"/>
+            <div className="text-center p-2">
               La luz solar es la que permite que el árbol pueda nacer y crecer
             </div>
           </div>
         {/*  Crad */}
-          <div className="flex-1 h-[300px] border-2 rounded-lg mr-2">
+          <div className="flex-1 border-2 rounded-lg mr-2 p-2">
             <div className="text-center">AGUA</div>
-            <img src={Gota} alt="" className="mx-auto block" />
-            <div className="text-center">
+            <img src={Gota} alt="" className="mx-auto block p-2" />
+            <div className="text-center p-2">
               La luz solar es la que permite que el árbol pueda nacer y crecer
             </div>
           </div>
         {/*  Crad */}
-          <div className="flex-1 h-[300px] border-2 rounded-lg mr-2">
-            <div className="text-center">TIERRA</div>
-            <img src={Tierra} alt="" className="mx-auto block"/>
-            <div>
+          <div className="flex-1 border-2 rounded-lg mr-2">
+            <div className="text-center p-2">TIERRA</div>
+            <img src={Tierra} alt="" className="mx-auto block p-2"/>
+            <div className="text-center p-2">
               La luz solar es la que permite que el árbol pueda nacer y crecer
             </div>
           </div>
         {/*  Crad */}
-          <div className="flex-1 h-[300px] border-2 rounded-lg mr-2">
-            <div className="text-center">AIRE</div>
-            <img src={Aire} alt="" className="mx-auto block"/>
+          <div className="flex-1 border-2 rounded-lg mr-2 p-2">
+            <div className="text-center p-2">AIRE</div>
+            <img src={Aire} alt="" className="mx-auto block p-2"/>
             <div>
               La luz solar es la que permite que el árbol pueda nacer y crecer
             </div>

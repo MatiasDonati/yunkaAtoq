@@ -47,6 +47,17 @@ const Home = () => {
               <BsChevronCompactRight onClick={fotoSiguiente} size={30} />
             </div>
 
+            {/* Carrusel */}
+            <div className="flex justify-center">
+              <div className=" hidden group-hover:flex absolute top-[120%] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
+                {fotos.map((foto, indice) => (
+                  <div key={indice} className="text-2xl cursor-pointer">
+                    <RxDash onClick={() => irAFoto(indice)} size={50} />
+                  </div>
+                ))}
+              </div>
+            </div>
+
             <div className="text-zinc-300 text-4xl italic text-center mt-[150px]">
               Bomberos Voluntarios
             </div>
@@ -61,15 +72,17 @@ const Home = () => {
             </div>
           </div>
         </div>
+
         <img className="w-full h-full object-cover" src={fotos[indiceActual]} />
 
-        <div className="flex justify-center">
+        {/*  <div className="flex justify-center">
           {fotos.map((foto, indice) => (
             <div key={indice} className="text-2xl cursor-pointer">
               <RxDash onClick={() => irAFoto(indice)} size={50} />
             </div>
           ))}
         </div>
+        */}
       </div>
 
       <div className="text-5xl text-center p-10 italic font-light">
