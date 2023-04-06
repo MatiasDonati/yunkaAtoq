@@ -13,7 +13,7 @@ const Departamentos = () => {
         </div>
         {/*Card 1 */}
         <div className="rounded-xl flex border-4 border-[#0E385B]  items-center justify-center">
-          <img src={BusquedaYRescate} className="w-1/5 h-1/5 " />
+          <img src={BusquedaYRescate} className="w-1/5 h-1/5" />
           <div className="p-4 my-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos facere
             quidem perferendis earum voluptatibus maiores magnam corrupti
