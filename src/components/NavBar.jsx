@@ -29,7 +29,7 @@ const NavBar = () => {
         </div>
 
         <div className="flex-1 text-white pr-10">
-         
+
           <ul className="flex justify-end">
             <li className="h-10 w-16">
               <BsTelephone className="hover:text-[40px] transition-all duration-400 ease-in-out" />
