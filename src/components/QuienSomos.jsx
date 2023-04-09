@@ -5,7 +5,6 @@ const QuienSomos = () => {
         <div className="pt-[200px] px-20 h-full">
                 <div className="">
                     <div>
-                        {" "}
                         <h1 className=" mx-[100px] w-[410px] h-[71px] left-[130px]  leading-[71px] text-4xl font-sans">
                             | Quienes somos?
                         </h1>

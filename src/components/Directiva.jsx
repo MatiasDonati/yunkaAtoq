@@ -4,11 +4,15 @@ import Rectangulo from "../assets/Rectangle-189.png"
 
 const Directiva = () => {
     return (
-        <div>
-            <h1 className="text-center text-4xl mb-[100px]">Directiva</h1>
-            <div className="flex justify-center align-center gap-[250px]  h-[100vh]  ml-[165px] relative">
+        <div className=' max-h-full max-w-full '>
+            <div className="text-center text-4xl bg-#fffbef absolute left-1/2  ">
+            <h1 >Directiva</h1>
+            </div>
+            <div className="flex justify-center align-center gap-[250px] mb-[300px] ml-[165px] relative">
                 <img className='absolute z-[-1] img' src={Rectangulo} alt="rectangulo" />
-                <div className="flex flex-col w-[580px] h-[888px] justify-between my-3 ">
+                
+                <div className="flex flex-col w-[580px] h-[888px] justify-between my-[155px] ">
+                    
                     <div className="text-white bg-blue-800 left-[135px] rounded text-center p-7">
                         <p>"Nunca dejamos a nadie atrás"</p>
                         <p>Carlos Andres Azcarraga Esquivel</p>
