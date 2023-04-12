@@ -3,7 +3,7 @@ import React from 'react'
 const Identidad = () => {
     return (
         <>
-            <div className='h-[100vh] p-5'>
+            <div className='h-full p-5 my-[350px]'>
                 <h1 className=" text-4xl font-sans">
                     | Nuestro logo, nuestra identidad
                 </h1>
