@@ -7,11 +7,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor:{
-        'fondo1' : '#fffbef'
-      },
-      backgroundColor:{
+        'fondo1': '#FFFCEF',
         'fondo2' : '#013662'
-      }
+      },
+      
     },
   },
   plugins: [],
