@@ -75,14 +75,6 @@ const Home = () => {
 
         <img className="w-full h-full object-cover" src={fotos[indiceActual]} />
 
-        {/*  <div className="flex justify-center">
-          {fotos.map((foto, indice) => (
-            <div key={indice} className="text-2xl cursor-pointer">
-              <RxDash onClick={() => irAFoto(indice)} size={50} />
-            </div>
-          ))}
-        </div>
-        */}
       </div>
 
       <div className="text-5xl text-center p-10 italic font-light">

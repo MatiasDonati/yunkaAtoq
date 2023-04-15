@@ -7,15 +7,10 @@ import { useState, useEffect } from "react";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  console.log(isScrolled);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 150) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      window.scrollY > 150 ? setIsScrolled(true) : setIsScrolled(false);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -25,6 +20,14 @@ const NavBar = () => {
     };
   }, []);
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleNavClick = () => {
+    setIsOpen(false);
+    // Ajusta la posición del scroll al principio de la sección "nosotros"
+    document.getElementById('nosotros').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="fixed w-full items-center z-10">
       {/* Navbar 1era Secciom */}
@@ -32,7 +35,8 @@ const NavBar = () => {
         <div className="pl-10 flex-1">
           <Link to="home" smooth={true} duration={500}>
             <NavLink to={"/"}>
-              <div className="text-white cursor-pointer">YUNKA ATOQ</div>
+              <div className="text-white cursor-pointer" onClick={handleNavClick}
+              >YUNKA ATOQ</div>
             </NavLink>
           </Link>
         </div>
@@ -42,7 +46,8 @@ const NavBar = () => {
             <NavLink to={"/"}>
               <img
                 src={YunkaLogo}
-                className={`${isScrolled ? 'w-[100px] pt-[40px]': 'w-[180px] pt-40'} transition-all duration-400 ease-in-out hover:w-[200px] cursor-pointer`}
+                className={`${isScrolled ? 'w-[100px] pt-[40px] transition-all duration-400 ease-in-out hover:w-[110px] hover:pt-[50px]' : 'w-[180px] pt-40 transition-all duration-400 ease-in-out hover:w-[200px]'} cursor-pointer`}
+                onClick={handleNavClick}
               />
             </NavLink>
           </Link>
@@ -74,6 +79,7 @@ const NavBar = () => {
             <NavLink
               className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
               to="/nosotros"
+              onClick={handleNavClick}
             >
               Nosotros
             </NavLink>
