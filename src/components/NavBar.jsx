@@ -1,12 +1,14 @@
 import { BsWhatsapp, BsTelephone } from "react-icons/bs";
 import { AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
 import YunkaLogo from "../assets/YunkaLogo.png";
-import { Link } from "react-scroll";
-import { NavLink } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
+import { NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation().pathname;
+  const [nosotros, setNosotros] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,8 +27,14 @@ const NavBar = () => {
   const handleNavClick = () => {
     setIsOpen(false);
     // Ajusta la posición del scroll al principio de la sección "nosotros"
-    document.getElementById('nosotros').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("nosotros").scrollIntoView({ behavior: "smooth" });
   };
+
+  const irAlFormulario = () => {
+    location === "/nosotros" ? setNosotros(true) : setNosotros(false);
+  };
+
+  console.log(nosotros);
 
   return (
     <div className="fixed w-full items-center z-10">
@@ -35,8 +43,12 @@ const NavBar = () => {
         <div className="pl-10 flex-1">
           <Link to="home" smooth={true} duration={500}>
             <NavLink to={"/"}>
-              <div className="text-white cursor-pointer" onClick={handleNavClick}
-              >YUNKA ATOQ</div>
+              <div
+                className="text-white cursor-pointer"
+                onClick={handleNavClick}
+              >
+                YUNKA ATOQ
+              </div>
             </NavLink>
           </Link>
         </div>
@@ -46,7 +58,11 @@ const NavBar = () => {
             <NavLink to={"/"}>
               <img
                 src={YunkaLogo}
-                className={`${isScrolled ? 'w-[100px] pt-[40px] transition-all duration-400 ease-in-out hover:w-[110px] hover:pt-[50px]' : 'w-[180px] pt-40 transition-all duration-400 ease-in-out hover:w-[200px]'} cursor-pointer`}
+                className={`${
+                  isScrolled
+                    ? "w-[100px] pt-[40px] transition-all duration-400 ease-in-out hover:w-[110px] hover:pt-[50px]"
+                    : "w-[180px] pt-40 transition-all duration-400 ease-in-out hover:w-[200px]"
+                } cursor-pointer`}
                 onClick={handleNavClick}
               />
             </NavLink>
@@ -102,6 +118,7 @@ const NavBar = () => {
               to="form"
               smooth={true}
               duration={500}
+              onClick={irAlFormulario}
             >
               <li>Incorpórate</li>
             </Link>
