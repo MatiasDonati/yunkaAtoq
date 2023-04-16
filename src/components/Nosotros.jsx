@@ -8,14 +8,14 @@ import Identidad from "./Identidad";
 
 const Nosotros = () => {
     return (
-        <>
+        <div id="nosotros">
             <QuienSomos/>
             <Directiva/>
             <Identidad/>
             <PartesLogo />
             <ArbolDeLaVida />
             <SerParte />
-        </>
+        </div>
     );
 };
 
