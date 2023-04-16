@@ -6,7 +6,7 @@ import Aire from "../assets/Aire.png";
 
 const ArbolDeLaVida = () => {
   return (
-    <div className="bg-[#0E385B] border-b-4 border-white">
+    <div className="bg-gradient-to-b from-[#0E385B] pb-4 border-white">
       <div className="h-full text-white  mx-[300px]">
         <div className="text-4xl p-10 font-light">
           | Los elementos del árbol de la vida

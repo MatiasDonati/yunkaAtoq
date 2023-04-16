@@ -3,7 +3,8 @@ import { BsWhatsapp } from "react-icons/bs";
 
 const SerParte = () => {
   return (
-    <div className="h-full mx-[200px] m-10">
+    <div className="bg-gradient-to-t from-[white]">
+    <div className="h-full mx-[200px]  ">
       <div className="text-5xl p-10 font-light text-white">| Te gustaría ser parte?</div>
       <div className="mx-[200px]">
       <div className="text-2xl mb-10 text-white">
@@ -25,11 +26,12 @@ const SerParte = () => {
       </div>
         <div className="flex flex-col items-center align-center pt-10 text-[#0E385B]">
             <div className="my-10  text text-2xl">Contactanos para recibir el formulario de inscripción</div>
-            <div className="text-white px-10 bg-[#0E385B] items-center align-center flex cursor-pointer hover:px-12 py-1 hover:bg-[#D49105] hover:text-black rounded-full transition-all duration-500 ease-in-out">
+            <div className="text-white px-10 bg-[#0E385B] mb-10 items-center align-center flex cursor-pointer hover:px-12 py-1 hover:bg-[#D49105] hover:text-black rounded-full transition-all duration-500 ease-in-out">
               <div className="pr-3"><BsWhatsapp /></div>
               <div>+591 62643328</div>
             </div>
         </div>
+    </div>
     </div>
   );
 };
