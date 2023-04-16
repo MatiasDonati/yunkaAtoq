@@ -34,7 +34,9 @@ const NavBar = () => {
     location === "/nosotros" ? setNosotros(true) : setNosotros(false);
   };
 
-  console.log(nosotros);
+  useEffect(() => {
+    console.log(nosotros);
+  }, [nosotros]);
 
   return (
     <div className="fixed w-full items-center z-10">
@@ -115,7 +117,7 @@ const NavBar = () => {
             </li>
             <Link
               className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
-              to="form"
+              to={location === '/' ? "form" : "partesLogo"}
               smooth={true}
               duration={500}
               onClick={irAlFormulario}
