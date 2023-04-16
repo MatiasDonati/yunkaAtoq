@@ -112,7 +112,7 @@ const NavBar = () => {
             <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-ou">
               Capacitaciones
             </li>
-            <Link
+            {location !== '/nosotros' ? <Link
               className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
               to="form"
               smooth={true}
@@ -120,7 +120,11 @@ const NavBar = () => {
               onClick={irAlFormulario}
             >
               <li>Incorpórate</li>
-            </Link>
+            </Link> : <NavLink
+              className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
+              to={'/'}
+            ><li>Incorpórate</li></NavLink> }
+
           </ul>
         </div>
       </div>
