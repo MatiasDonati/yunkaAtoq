@@ -45,7 +45,6 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-       
       </div>
 
       {/* Navbar 2da Seccion */}
