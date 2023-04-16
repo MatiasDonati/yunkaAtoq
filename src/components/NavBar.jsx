@@ -41,10 +41,10 @@ const NavBar = () => {
       <div className="bg-[#0E385B] w-full h-[70px] flex justify-between items-center text-3xl font-bold">
         <div className="pl-10 flex-1">
           <Link to="home" smooth={true} duration={500}>
-            <NavLink to={"/"}>
+            <NavLink to="/">
               <div
                 className="text-white cursor-pointer"
-                onClick={handleNavClick}
+                // onClick={handleNavClick}
               >
                 YUNKA ATOQ
               </div>
@@ -54,7 +54,7 @@ const NavBar = () => {
 
         <div className=" flex flex-1 justify-center">
           <Link to="home" smooth={true} duration={500}>
-            <NavLink to={"/"}>
+            <NavLink to="/">
               <img
                 src={YunkaLogo}
                 className={`${
