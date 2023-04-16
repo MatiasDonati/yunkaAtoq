@@ -7,8 +7,8 @@ import { useState, useEffect } from "react";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation().pathname;
   const [nosotros, setNosotros] = useState(false);
+  const location = useLocation().pathname;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,10 +22,7 @@ const NavBar = () => {
     };
   }, []);
 
-  const [isOpen, setIsOpen] = useState(false);
-
   const handleNavClick = () => {
-    setIsOpen(false);
     // Ajusta la posición del scroll al principio de la sección "nosotros"
     document.getElementById("nosotros").scrollIntoView({ behavior: "smooth" });
   };
@@ -117,7 +114,7 @@ const NavBar = () => {
             </li>
             <Link
               className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
-              to={location === '/' ? "form" : "partesLogo"}
+              to="form"
               smooth={true}
               duration={500}
               onClick={irAlFormulario}
