@@ -17,10 +17,6 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const handleNavClick = () => {
-    // Ajusta la posición del scroll al principio de la sección "nosotros"
-    document.getElementById("nosotros").scrollIntoView({ behavior: "smooth" });
-  };
   const irAlFormulario = () => {
     location === "/nosotros" ? setNosotros(true) : setNosotros(false);
   };
