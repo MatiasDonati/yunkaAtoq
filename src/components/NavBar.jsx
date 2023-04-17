@@ -4,18 +4,18 @@ import YunkaLogo from "../assets/YunkaLogo.png";
 import { animateScroll as scroll } from "react-scroll";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import ModalDonaciones from "./ModalDonaciones";
+import ReactModal from "react-modal";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [nosotros, setNosotros] = useState(false);
   const location = useLocation().pathname;
   //modal
-  const [modalIsOpen, setModalIsOpen] = useState(false); // agrega un estado para el modal
-
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const handleDonacionesClick = () => {
-    setModalIsOpen(true); // cambia el estado a true cuando se hace clic en "Donaciones"
+    setModalIsOpen(true);
   };
+  
   //
   useEffect(() => {
     const handleScroll = () => {
@@ -105,11 +105,10 @@ const NavBar = () => {
             <li
               className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
               onClick={handleDonacionesClick}
-              
-              >
+
+            >
               Donaciones
-                {/* Renderizado condicional del componente Modal */}
-                {modalIsOpen && <ModalDonaciones onClose={() => setModalIsOpen(false)} />}
+
             </li>
           </ul>
         </div>
@@ -176,8 +175,32 @@ const NavBar = () => {
           </li>
         </ul>
       </div>
-
-    </div>
+      {/* modal */}
+      <ReactModal
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+        style={{
+          overlay: {
+            backgroundColor: "rgba(0, 0, 0, 0.841)",
+          },
+          content: {
+            top: "50%",
+            left: "50%",
+            right: "auto",
+            bottom: "auto",
+            marginRight: "-50%",
+            transform: "translate(-50%, -50%)",
+            backgroundColor: "#fff",
+            border: "none",
+            borderRadius: "10px",
+            padding: "20px",
+          },
+        }}
+      >
+        <h2>Este es el contenido del modal</h2>
+        <p>Puedes agregar aquí lo que quieras mostrar en el modal</p>
+      </ReactModal>
+    </div >
   );
 };
 export default NavBar;
