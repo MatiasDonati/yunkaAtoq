@@ -4,10 +4,19 @@ import YunkaLogo from "../assets/YunkaLogo.png";
 import { animateScroll as scroll } from "react-scroll";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import ModalDonaciones from "./ModalDonaciones";
+
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [nosotros, setNosotros] = useState(false);
   const location = useLocation().pathname;
+  //modal
+  const [modalIsOpen, setModalIsOpen] = useState(false); // agrega un estado para el modal
+
+  const handleDonacionesClick = () => {
+    setModalIsOpen(true); // cambia el estado a true cuando se hace clic en "Donaciones"
+  };
+  //
   useEffect(() => {
     const handleScroll = () => {
       window.scrollY > 150 ? setIsScrolled(true) : setIsScrolled(false);
@@ -20,16 +29,13 @@ const NavBar = () => {
   const irAlFormulario = () => {
     location === "/nosotros" ? setNosotros(true) : setNosotros(false);
   };
-  useEffect(() => {
-    console.log(nosotros);
-  }, [nosotros]);
 
   return (
     <div className="fixed w-full items-center z-10">
       {/* Navbar 1era Secciom */}
       <div id="top" className="bg-[#0E385B] w-full h-[70px] flex justify-between items-center text-3xl font-bold">
         <div className="pl-10 flex-1">
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="home" smooth="true" duration={500}>
 
             <div
               className="text-white cursor-pointer"
@@ -44,7 +50,7 @@ const NavBar = () => {
         </div>
 
         <div className=" flex flex-1 justify-center">
-          <Link to="/" smooth={true} duration={500}>
+          <Link to="/" smooth="true" duration={500}>
 
             <img
               src={YunkaLogo}
@@ -59,29 +65,29 @@ const NavBar = () => {
         </div>
 
         <div className="flex-1 text-white pr-10">
-  <ul className="flex justify-end">
-    <li className="h-10 w-16">
-      <a target="_blank" href="tel:+5492617234395">
-        <BsTelephone className="hover:text-[40px] transition-all duration-400 ease-in-out" />
-      </a>
-    </li>
-    <li className="h-10 w-16">
-      <a target="_blank" href="https://wa.me/5492617234395?text=Hola,%20me%20podrían%20dar%20más%20información%20sobre%20la%20incorporación?">
-        <BsWhatsapp className="hover:text-[40px] transition-all duration-400 ease-in-out" />
-      </a>
-    </li>
-    <li className="h-10 w-16">
-      <a target="_blank" href="https://www.facebook.com/yunkabo">
-        <AiOutlineFacebook className="hover:text-[40px] transition-all duration-400 ease-in-out" />
-      </a>
-    </li>
-    <li className="h-10 w-16">
-      <a target="_blank" href="https://www.linkedin.com/in/carlosazcarraga/">
-        <AiOutlineLinkedin className="hover:text-[40px] transition-all duration-400 ease-in-out" />
-      </a>
-    </li>
-  </ul>
-</div>
+          <ul className="flex justify-end">
+            <li className="h-10 w-16">
+              <a target="_blank" href="tel:+5492617234395">
+                <BsTelephone className="hover:text-[40px] transition-all duration-400 ease-in-out" />
+              </a>
+            </li>
+            <li className="h-10 w-16">
+              <a target="_blank" href="https://wa.me/5492617234395?text=Hola,%20me%20podrían%20dar%20más%20información%20sobre%20la%20incorporación?">
+                <BsWhatsapp className="hover:text-[40px] transition-all duration-400 ease-in-out" />
+              </a>
+            </li>
+            <li className="h-10 w-16">
+              <a target="_blank" href="https://www.facebook.com/yunkabo">
+                <AiOutlineFacebook className="hover:text-[40px] transition-all duration-400 ease-in-out" />
+              </a>
+            </li>
+            <li className="h-10 w-16">
+              <a target="_blank" href="https://www.linkedin.com/in/carlosazcarraga/">
+                <AiOutlineLinkedin className="hover:text-[40px] transition-all duration-400 ease-in-out" />
+              </a>
+            </li>
+          </ul>
+        </div>
 
       </div>
 
@@ -96,8 +102,14 @@ const NavBar = () => {
             >
               Nosotros
             </Link>
-            <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out">
+            <li
+              className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
+              onClick={handleDonacionesClick}
+              
+              >
               Donaciones
+                {/* Renderizado condicional del componente Modal */}
+                {modalIsOpen && <ModalDonaciones onClose={() => setModalIsOpen(false)} />}
             </li>
           </ul>
         </div>
@@ -111,7 +123,7 @@ const NavBar = () => {
               <Link
                 className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
                 to="form"
-                smooth={true}
+                smooth="true"
                 duration={500}
                 onClick={irAlFormulario}
               >
@@ -130,42 +142,41 @@ const NavBar = () => {
       </div>
 
       {/* Menu flotante */}
-      <div className="hidden lg:flex fixed flex-col bottom-[10%] left-0">
+      <div className="hidden lg:flex fixed flex-col bottom-[10%] right-0">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-r-full duration-500  text-[#204D70] bg-zinc-300 rounded-tr-[100px]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:mr-[-10px] hover:rounded-l-full duration-500  text-[#204D70] bg-zinc-300 rounded-tl-[100px]">
             <a className="flex justify-between items-center w-full" href="tel:5492617234395">
-              LLámanos
               <BsTelephone size={30} />
+              LLámanos
             </a>
-
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-r-full duration-500  text-[#204D70] bg-zinc-300">
+          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:mr-[-10px] hover:rounded-l-full duration-500  text-[#204D70] bg-zinc-300">
             <a target="_blank" className="flex justify-between items-center w-full" href="https://wa.me/5492617234395?text=Hola, me podrían dar más información sobre la incorporación?">
-              Mensaje
               <BsWhatsapp size={30} />
+              Mensaje
             </a>
-
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-r-full duration-500  text-[#204D70] bg-zinc-300 ">
+          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:mr-[-10px] hover:rounded-l-full duration-500  text-[#204D70] bg-zinc-300 ">
             <a
               className="flex justify-between items-center w-full"
               target="_blank" href="https://www.facebook.com/yunkabo"
             >
-              Conócenos
               <AiOutlineFacebook size={30} />
+              Conócenos
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-r-full duration-500  text-[#204D70] bg-zinc-300 rounded-br-[100px]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:mr-[-10px] hover:rounded-l-full duration-500  text-[#204D70] bg-zinc-300 rounded-bl-[100px]">
             <a
               className="flex justify-between items-center w-full"
               target="_blank" href="https://www.linkedin.com/in/carlosazcarraga/"
             >
-              Interactua
               <AiOutlineLinkedin size={30} />
+              Interactua
             </a>
           </li>
         </ul>
       </div>
+
     </div>
   );
 };
