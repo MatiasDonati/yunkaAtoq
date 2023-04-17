@@ -5,6 +5,7 @@ import { animateScroll as scroll } from "react-scroll";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ModalDonaciones from "./ModalDonaciones";
+import ReactModal from "react-modal";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -14,6 +15,8 @@ const NavBar = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false); // agrega un estado para el modal
 
   const handleDonacionesClick = () => {
+    console.log('Click Donaciones');
+    console.log(modalIsOpen);
     setModalIsOpen(true); // cambia el estado a true cuando se hace clic en "Donaciones"
   };
   //
@@ -99,6 +102,7 @@ const NavBar = () => {
             <Link
               to="/nosotros"
               className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
+              onClick={() => scroll.scrollToTop({ duration: 500 })}
             >
               Nosotros
             </Link>
@@ -107,8 +111,6 @@ const NavBar = () => {
               onClick={handleDonacionesClick}
               >
               Donaciones
-                {/* Renderizado condicional del componente Modal */}
-                {modalIsOpen && <ModalDonaciones onClose={() => setModalIsOpen(false)} />}
             </li>
           </ul>
         </div>
@@ -175,7 +177,18 @@ const NavBar = () => {
           </li>
         </ul>
       </div>
-
+      {/* Modal */}
+      {/* <ReactModal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setModalIsOpen(false)}
+                className="modal"
+                overlayClassName="modal-overlay"
+            >
+                <div className="modal-content">
+                    <h2>Este es el contenido del modal</h2>
+                    <p>Puedes agregar aquí lo que quieras mostrar en el modal</p>
+                </div>
+            </ReactModal> */}
     </div>
   );
 };
