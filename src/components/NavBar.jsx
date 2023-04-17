@@ -105,7 +105,6 @@ const NavBar = () => {
             <li
               className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
               onClick={handleDonacionesClick}
-              
               >
               Donaciones
                 {/* Renderizado condicional del componente Modal */}
