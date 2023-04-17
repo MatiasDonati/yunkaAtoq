@@ -59,21 +59,30 @@ const NavBar = () => {
         </div>
 
         <div className="flex-1 text-white pr-10">
-          <ul className="flex justify-end">
-            <li className="h-10 w-16">
-              <BsTelephone className="hover:text-[40px] transition-all duration-400 ease-in-out" />
-            </li>
-            <li className="h-10 w-16">
-              <BsWhatsapp className="hover:text-[40px] transition-all duration-400 ease-in-out" />
-            </li>
-            <li className="h-10 w-16">
-              <AiOutlineFacebook className="hover:text-[40px] transition-all duration-400 ease-in-out" />
-            </li>
-            <li className="h-10 w-16">
-              <AiOutlineLinkedin className="hover:text-[40px] transition-all duration-400 ease-in-out" />
-            </li>
-          </ul>
-        </div>
+  <ul className="flex justify-end">
+    <li className="h-10 w-16">
+      <a target="_blank" href="tel:+5492617234395">
+        <BsTelephone className="hover:text-[40px] transition-all duration-400 ease-in-out" />
+      </a>
+    </li>
+    <li className="h-10 w-16">
+      <a target="_blank" href="https://wa.me/5492617234395?text=Hola,%20me%20podrían%20dar%20más%20información%20sobre%20la%20incorporación?">
+        <BsWhatsapp className="hover:text-[40px] transition-all duration-400 ease-in-out" />
+      </a>
+    </li>
+    <li className="h-10 w-16">
+      <a target="_blank" href="https://www.facebook.com/yunkabo">
+        <AiOutlineFacebook className="hover:text-[40px] transition-all duration-400 ease-in-out" />
+      </a>
+    </li>
+    <li className="h-10 w-16">
+      <a target="_blank" href="https://www.linkedin.com/in/carlosazcarraga/">
+        <AiOutlineLinkedin className="hover:text-[40px] transition-all duration-400 ease-in-out" />
+      </a>
+    </li>
+  </ul>
+</div>
+
       </div>
 
       {/* Navbar 2da Seccion */}
@@ -124,27 +133,23 @@ const NavBar = () => {
       <div className="hidden lg:flex fixed flex-col bottom-[10%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-r-full duration-500  text-[#204D70] bg-zinc-300 rounded-tr-[100px]">
-            <a
-              className="flex justify-between items-center w-full texxt-gray-300"
-              href="/"
-            >
+            <a className="flex justify-between items-center w-full" href="tel:5492617234395">
               LLámanos
               <BsTelephone size={30} />
             </a>
+
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-r-full duration-500  text-[#204D70] bg-zinc-300">
-            <a
-              className="flex justify-between items-center w-full texxt-gray-300"
-              href="/"
-            >
+            <a target="_blank" className="flex justify-between items-center w-full" href="https://wa.me/5492617234395?text=Hola, me podrían dar más información sobre la incorporación?">
               Mensaje
               <BsWhatsapp size={30} />
             </a>
+
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-r-full duration-500  text-[#204D70] bg-zinc-300 ">
             <a
-              className="flex justify-between items-center w-full texxt-gray-300"
-              href="/"
+              className="flex justify-between items-center w-full"
+              target="_blank" href="https://www.facebook.com/yunkabo"
             >
               Conócenos
               <AiOutlineFacebook size={30} />
@@ -152,8 +157,8 @@ const NavBar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-r-full duration-500  text-[#204D70] bg-zinc-300 rounded-br-[100px]">
             <a
-              className="flex justify-between items-center w-full texxt-gray-300"
-              href="/"
+              className="flex justify-between items-center w-full"
+              target="_blank" href="https://www.linkedin.com/in/carlosazcarraga/"
             >
               Interactua
               <AiOutlineLinkedin size={30} />
