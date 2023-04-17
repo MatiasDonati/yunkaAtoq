@@ -1,36 +1,29 @@
 import { BsWhatsapp, BsTelephone } from "react-icons/bs";
 import { AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
 import YunkaLogo from "../assets/YunkaLogo.png";
-import { Link, animateScroll as scroll } from "react-scroll";
-import { NavLink, useLocation } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [nosotros, setNosotros] = useState(false);
   const location = useLocation().pathname;
-
   useEffect(() => {
     const handleScroll = () => {
       window.scrollY > 150 ? setIsScrolled(true) : setIsScrolled(false);
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   const handleNavClick = () => {
     // Ajusta la posición del scroll al principio de la sección "nosotros"
     document.getElementById("nosotros").scrollIntoView({ behavior: "smooth" });
   };
-
   const irAlFormulario = () => {
     location === "/nosotros" ? setNosotros(true) : setNosotros(false);
   };
-
   useEffect(() => {
     console.log(nosotros);
   }, [nosotros]);
@@ -38,33 +31,34 @@ const NavBar = () => {
   return (
     <div className="fixed w-full items-center z-10">
       {/* Navbar 1era Secciom */}
-      <div className="bg-[#0E385B] w-full h-[70px] flex justify-between items-center text-3xl font-bold">
+      <div id="top" className="bg-[#0E385B] w-full h-[70px] flex justify-between items-center text-3xl font-bold">
         <div className="pl-10 flex-1">
           <Link to="home" smooth={true} duration={500}>
-            <NavLink to="/">
-              <div
-                className="text-white cursor-pointer"
-                // onClick={handleNavClick}
-              >
+
+            <div
+              className="text-white cursor-pointer"
+            // onClick={handleNavClick}
+            >
+              <Link to={"/"} onClick={() => scroll.scrollToTop({ duration: 500 })}>
                 YUNKA ATOQ
-              </div>
-            </NavLink>
+              </Link>
+            </div>
+
           </Link>
         </div>
 
         <div className=" flex flex-1 justify-center">
-          <Link to="home" smooth={true} duration={500}>
-            <NavLink to="/">
-              <img
-                src={YunkaLogo}
-                className={`${
-                  isScrolled
-                    ? "w-[100px] pt-[40px] transition-all duration-400 ease-in-out hover:w-[110px] hover:pt-[50px]"
-                    : "w-[180px] pt-40 transition-all duration-400 ease-in-out hover:w-[200px]"
+          <Link to="/" smooth={true} duration={500}>
+
+            <img
+              src={YunkaLogo}
+              className={`${isScrolled
+                ? "w-[100px] pt-[40px] transition-all duration-400 ease-in-out hover:w-[110px] hover:pt-[50px]"
+                : "w-[180px] pt-40 transition-all duration-400 ease-in-out hover:w-[200px]"
                 } cursor-pointer`}
-                onClick={handleNavClick}
-              />
-            </NavLink>
+              onClick={() => scroll.scrollToTop({ duration: 500 })}
+            />
+
           </Link>
         </div>
 
@@ -91,13 +85,12 @@ const NavBar = () => {
       <div className="flex w-full flex-row bg-[#0E385B] h-[50px] items-center border-y-4 text-white text-lg">
         <div className="flex-1 px-20">
           <ul className="flex justify-between">
-            <NavLink
-              className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
+            <Link
               to="/nosotros"
-              onClick={handleNavClick}
+              className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
             >
               Nosotros
-            </NavLink>
+            </Link>
             <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out">
               Donaciones
             </li>
@@ -120,12 +113,12 @@ const NavBar = () => {
                 <li>Incorpórate</li>
               </Link>
             ) : (
-              <NavLink
+              <Link
                 className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
                 to={"/"}
               >
                 <li>Incorpórate</li>
-              </NavLink>
+              </Link>
             )}
           </ul>
         </div>
