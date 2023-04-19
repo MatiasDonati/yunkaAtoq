@@ -9,6 +9,7 @@ import GoogleMaps from "./GoogleMaps";
 import Form from "./Form";
 import FacebookPosts from "./FacebookPosts";
 import Departamentos from "./Departamentos";
+import Formacion from "./Formacion";
 
 const Home = () => {
   const fotos = [Bomberos1, Bomberos2, Bomberos3, Bomberos4];
@@ -100,6 +101,7 @@ const Home = () => {
         </div>
       </div>
       <Departamentos />
+      <Formacion />
       <div className="faceform">
       <FacebookPosts />
       <Form />

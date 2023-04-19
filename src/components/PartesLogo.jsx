@@ -47,7 +47,6 @@ const PartesLogo = () => {
 
   return (
     <div name="partesLogo" className="bg-[#023763] h-[400px] text-white flex items-center px-20">
-
       {parteLogos.map((el, indice) => (
         <div key={indice} className="flex-1 px-10 h-3/4 border-2 rounded-lg mr-2">
 
