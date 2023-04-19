@@ -2,6 +2,12 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import sombrero from "../assets/parteLogos/atom/Sombrero.png"
+import engranajes from "../assets/parteLogos/atom/Engranajes.png"
+import cruzAmarilla from "../assets/parteLogos/atom/CruzAmarilla.png"
+import corazon from "../assets/parteLogos/atom/Corazon.png"
+import cruzBlanca from "../assets/parteLogos/atom/CruzBlanca.png"
+import hachas from "../assets/parteLogos/atom/Hachas.png"
 
 const settings = {
   
@@ -16,24 +22,24 @@ const PartesLogo = () => {
 
   return (
     <>
-      <Slider {...settings} className='bg-fondo2 p-7'>
+      <Slider {...settings} className='bg-fondo2 p-5'>
         <div>
-          <img src="../src/assets/parteLogos/atom/Sombrero.png" alt="1" />
+          <img src={sombrero} alt="1" />
         </div>
         <div>
-          <img src="../src/assets/parteLogos/atom/Engranajes.png" alt="2" />
+          <img src={engranajes} alt="2" />
         </div>
         <div>
-          <img src="../src/assets/parteLogos/atom/CruzAmarilla.png" alt="3" />
+          <img src={cruzAmarilla} alt="3" />
         </div>
         <div>
-          <img src="../src/assets/parteLogos/atom/Corazon.png" alt="4" />
+          <img src={corazon}alt="4" />
         </div>
         <div>
-          <img src="../src/assets/parteLogos/atom/CruzBlanca.png" alt="5" />
+          <img src={cruzBlanca} alt="5" />
         </div>
         <div>
-          <img src="../src/assets/parteLogos/atom/Hachas.png" alt="6" />
+          <img src={hachas} alt="6" />
         </div>
       </Slider>
     </>
