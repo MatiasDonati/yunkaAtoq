@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from "../assets/logo.png"
 
 const Identidad = () => {
     return (
@@ -11,7 +12,7 @@ const Identidad = () => {
                 </div>
                 <div className='flex justify-around'>
                     <div className='imagen '>
-                        <img src="../src/assets/logo.png" alt="logo" />
+                        <img src={Logo} alt="logo" />
                     </div>
                     <div className='texto flex flex-col text-3xl w-[950px] mt-10'>
                         <h2 className='italic font-bold mb-10'>Astucia, inteligencia y agilidad</h2>

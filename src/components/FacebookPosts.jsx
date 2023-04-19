@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineLike } from "react-icons/ai";
-import { BsFacebook } from "react-icons/bs";
+import Face from "../assets/face.png";
 function FacebookPosts() {
   return (
     <div className="flex justify-center items-center w-full">
@@ -10,7 +10,7 @@ function FacebookPosts() {
           <div className="flex">
             <img
               className="w-[45px]"
-              src="../src/assets/face.png"
+              src={Face}
               alt="face"
             />
             <h1 className="text-white text-4xl ml-5">Yunka Atoq</h1>
