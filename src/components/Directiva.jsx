@@ -38,7 +38,7 @@ const Directiva = () => {
                         <p>Presidente de Yunca Atoq</p>
                     </div>
             </div>
-                <div className='div2D'>
+                <div className='div2D ml-16'>
                     <img className='div4D' src={Foto} alt="bomberos" />
                 </div>
         </div>
