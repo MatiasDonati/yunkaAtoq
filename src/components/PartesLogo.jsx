@@ -1,13 +1,49 @@
-import Sombrero from "../assets/parteLogos/Sombrero.png";
-import Engra from "../assets/parteLogos/Engrana.png";
-import Insig from "../assets/parteLogos/Insig.png";
-import Cora from "../assets/parteLogos/Cora.png";
-import Cruz from "../assets/parteLogos/Cruz.png";
-import Fuego from "../assets/parteLogos/Fuego.png";
-import Martillos from "../assets/parteLogos/Martillos.png";
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const settings = {
+  
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 2
+};
 
 const PartesLogo = () => {
-  const parteLogos = [
+
+
+  return (
+    <>
+      <Slider {...settings} className='bg-fondo2 p-7'>
+        <div>
+          <img src="../src/assets/parteLogos/atom/Sombrero.png" alt="1" />
+        </div>
+        <div>
+          <img src="../src/assets/parteLogos/atom/Engranajes.png" alt="2" />
+        </div>
+        <div>
+          <img src="../src/assets/parteLogos/atom/CruzAmarilla.png" alt="3" />
+        </div>
+        <div>
+          <img src="../src/assets/parteLogos/atom/Corazon.png" alt="4" />
+        </div>
+        <div>
+          <img src="../src/assets/parteLogos/atom/CruzBlanca.png" alt="5" />
+        </div>
+        <div>
+          <img src="../src/assets/parteLogos/atom/Hachas.png" alt="6" />
+        </div>
+      </Slider>
+    </>
+  );
+};
+export default PartesLogo;
+
+
+/* 
+const parteLogos = [
     {
       logo:  Sombrero ,
       texto:
@@ -45,8 +81,12 @@ const PartesLogo = () => {
     },
   ];
 
-  return (
-    <div name="partesLogo" className="bg-[#023763] h-[400px] text-white flex items-center px-20">
+
+dentro del return 
+
+
+<div name="partesLogo" className="bg-[#023763] h-[400px] text-white flex items-center px-20">
+
       {parteLogos.map((el, indice) => (
         <div key={indice} className="flex-1 px-10 h-3/4 border-2 rounded-lg mr-2">
 
@@ -58,6 +98,8 @@ const PartesLogo = () => {
         </div>
       ))}
     </div>
-  );
-};
-export default PartesLogo;
+
+
+
+
+*/
