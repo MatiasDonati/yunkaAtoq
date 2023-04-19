@@ -31,7 +31,7 @@ const ModalDonaciones = () => {
                 una entrega o recogida que sea conveniente para usted.
               </p>
             </div>
-            <button className="btn">
+            <button className="btn hover:bg-[#D49105] hover:text-black rounded-full transition-all duration-500 ease-in-out">
               <BsWhatsapp size={30} />
               <a
                 href="https://wa.me/5492617234395?text=Hola,%20me%20gustaria%20donar."
