@@ -100,8 +100,10 @@ const Home = () => {
         </div>
       </div>
       <Departamentos />
+      <div className="faceform">
       <FacebookPosts />
       <Form />
+      </div>
       <GoogleMaps />
     </div>
   );
