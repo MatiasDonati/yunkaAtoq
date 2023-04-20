@@ -91,7 +91,19 @@
 .btn a {
   font-weight: bold;
 }
+.p-4::-webkit-scrollbar {
+  width: 7px;
+  background-color: #417298;
+}
 
+.p-4::-webkit-scrollbar-thumb {
+  background-color: #013662;
+  border-radius: 10px;
+}
+
+.p-4::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
 .faceform{
 display: flex;
 }
