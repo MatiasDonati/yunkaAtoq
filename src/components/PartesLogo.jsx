@@ -1,74 +1,83 @@
 import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css'; 
-import 'slick-carousel/slick/slick-theme.css';
-import sombrero from "../assets/parteLogos/atom/Sombrero.png"
-import engranajes from "../assets/parteLogos/atom/Engranajes.png"
-import cruzAmarilla from "../assets/parteLogos/atom/CruzAmarilla.png"
-import corazon from "../assets/parteLogos/atom/Corazon.png"
-import cruzBlanca from "../assets/parteLogos/atom/CruzBlanca.png"
-import hachas from "../assets/parteLogos/atom/Hachas.png"
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import sombrero from "../assets/parteLogos/atom/Sombrero.png";
+import engranajes from "../assets/parteLogos/atom/Engranajes.png";
+import cruzAmarilla from "../assets/parteLogos/atom/CruzAmarilla.png";
+import corazon from "../assets/parteLogos/atom/Corazon.png";
+import cruzBlanca from "../assets/parteLogos/atom/CruzBlanca.png";
+import hachas from "../assets/parteLogos/atom/Hachas.png";
 
-const settings = {
-  infinite: true,
-  speed: 500,
-  slidesToShow: 4,
-      slidesToScroll: 4,
-      initialSlide: 0,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-};
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const PartesLogo = () => {
+  const slides = [
+    {
+      id: 1,
+      image: sombrero,
+      alt: "1"
+    },
+    {
+      id: 2,
+      image: engranajes,
+      alt: "2"
+    },
+    {
+      id: 3,
+      image: cruzAmarilla,
+      alt: "3"
+    },
+    {
+      id: 4,
+      image: corazon,
+      alt: "4"
+    },
+    {
+      id: 5,
+      image: cruzBlanca,
+      alt: "5"
+    },
+    {
+      id: 6,
+      image: hachas,
+      alt: "6"
+    },
+  ];
+
+  const swiperParams = {
+    slidesPerView: 4,
+    spaceBetween: -100,
+    navigation: true,
+    loop: false,
+    autoplay: { delay: 2000 },
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+    },
+    initialSlide: 0,
+  };
+
+
   return (
-    <>
-      
-        <Slider {...settings} className='bg-fondo2 p-5'>
-          <div>
-            <img src={sombrero} alt="1" />
-          </div>
-          <div>
-            <img src={engranajes} alt="2" />
-          </div>
-          <div>
-            <img src={cruzAmarilla} alt="3" />
-          </div>
-          <div>
-            <img src={corazon} alt="4" />
-          </div>
-          <div>
-            <img src={cruzBlanca} alt="5" />
-          </div>
-          <div>
-            <img src={hachas} alt="6" />
-          </div>
-        </Slider>
-      
-    </>
+    <Swiper {...swiperParams} className='bg-fondo2 p-10 '>
+      {slides.map((slide) => (
+        <SwiperSlide key={slide.id}>
+          <img src={slide.image} alt={slide.alt} />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
+
 export default PartesLogo;
