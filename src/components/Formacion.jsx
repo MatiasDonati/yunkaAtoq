@@ -28,7 +28,7 @@ const Formacion = () => {
       {formacion.map((el, indice) => (
         <div key={indice} className="flex-1 border-2 rounded-lg mr-2 mx-10 bg-[#052B4A]">
           <img src={el.logo} alt="" className="mx-auto block p-2 mb-20 mt-10" />
-          <div id="hola" className="bg-[#C28507] border-t-2 rounded h-10 flex justify-center items-center text-xl font-light">{el.titulo}</div>
+          <div id="hola" className="bg-[#C28507] border-t-2 rounded h-14 flex justify-center items-center text-xl font-bold">{el.titulo}</div>
         </div>
       ))}
     </div>
