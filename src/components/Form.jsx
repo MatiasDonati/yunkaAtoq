@@ -43,25 +43,25 @@ const Form = () => {
         </h1>
         <div className="flex flex-col">
           <input
-            className=" bg-fondo1 mx-[100px] bg-fondo1 p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none rounded-t-lg"
+            className=" backgroundInput my-2 mx-[100px] p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none rounded-t-lg"
             type="text"
             placeholder="Nombre y Apellido"
             name="name"
           />
           <input
-            className="mx-[100px] bg-fondo1 p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none"
+            className="mx-[100px] backgroundInput my-2 p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none"
             type="text"
             placeholder="Ciudad"
             name="city"
           />
           <input
-            className="mx-[100px] bg-fondo1 p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none"
+            className="mx-[100px] backgroundInput my-2 p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none"
             type="email"
             placeholder="Email"
             name="email"
           />
           <input
-            className="mx-[100px] bg-fondo1 p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none"
+            className="mx-[100px] backgroundInput my-2 p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none"
             type="number"
             placeholder="Celular"
             name="phone"
@@ -72,7 +72,7 @@ const Form = () => {
           {/*  */}
 
           <textarea
-            className="mx-[100px] bg-fondo1 p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none rounded-lg"
+            className="mx-[100px] backgroundInput my-2 p-2 border-b-[3px] border-black hover:bg-slate-100 outline-none rounded-lg"
             name="message"
             rows="3"
             placeholder="Mensaje"

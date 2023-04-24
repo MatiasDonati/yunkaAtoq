@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       backgroundColor:{
         'fondo1': '#FFFCEF',
-        'fondo2' : '#013662'
+        'fondo2' : '#013662',
       },
       
     },

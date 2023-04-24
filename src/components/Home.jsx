@@ -102,9 +102,13 @@ const Home = () => {
       </div>
       <Departamentos />
       <Formacion />
-      <div className="faceform">
-      <FacebookPosts />
-      <Form />
+      <div className="parentFaceForm">
+        <div className="divF1">
+          <FacebookPosts />
+        </div>
+        <div className="divF2">
+          <Form />
+        </div>
       </div>
       <GoogleMaps />
     </div>
