@@ -95,27 +95,13 @@ const NavBar = () => {
           </ul>
         </div>
       </div>
+ 
 
       {/* Navbar 2da Seccion */}
       {/* Primera opcion */}
       <div className="flex w-full flex-row bg-[#0E385B] h-[50px] items-center border-y-4 text-white text-lg">
-        <div className="flex-1 px-20 ">
-          <ul className="flex justify-between">
-            <Link
-              to="/nosotros"
-              className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block"
-              onClick={() => scroll.scrollToTop({ duration: 500 })}
-            >
-              Nosotros
-            </Link>
-            <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block">
-              <ModalDonaciones />
-            </li>
-          </ul>
-        </div>
-
         {/* Hamburguer */}
-        <div onClick={handleClick} className="md:hidden z-10">
+ <div onClick={handleClick} className="md:hidden z-10 ml-10">
           {!nav ? <FaBars /> : <FaTimes />}
         </div>
 
@@ -167,7 +153,20 @@ const NavBar = () => {
             </Link>
           </li>
         </ul>
-
+      <div className="flex-1 px-20 ">
+          <ul className="flex justify-between">
+            <Link
+              to="/nosotros"
+              className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block"
+              onClick={() => scroll.scrollToTop({ duration: 500 })}
+            >
+              Nosotros
+            </Link>
+            <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block">
+              <ModalDonaciones />
+            </li>
+          </ul>
+        </div>
         <div className="flex-1 px-20">
           <ul className="flex justify-between">
             <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block">
@@ -194,6 +193,9 @@ const NavBar = () => {
           </ul>
         </div>
       </div>
+
+
+       
 
       {/* Menu flotante */}
       <div className="hidden lg:flex fixed flex-col bottom-[10%] right-0">
