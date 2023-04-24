@@ -153,7 +153,13 @@ textarea[name="message"]::placeholder {
   color: black;
 }
 
-
+.SomosContainer{
+  /* pt-[200px] px-20 h-full mb-[150px] */
+  padding-top: 200px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 150px;
+}
 
   .parentSomos {
     display: grid;
@@ -289,4 +295,48 @@ textarea[name="message"]::placeholder {
 
   .image-container:hover::before {
     opacity: 1;
+  }
+
+  @media (max-width : 768px){}
+  @media (max-width : 576px){
+    .SomosContainer{
+      padding-left: 1rem;
+      padding-right: 1.5rem;
+    }
+    .parentSomos {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(4, auto);
+      grid-column-gap: 0px;
+      grid-row-gap: 22px;
+      }
+      .div1S {
+      grid-area: 1 / 1 / 2 / 13;
+      }
+      .div2S {
+      grid-area: 2 / 1 / 3 / 13;
+      }
+      .div3S {
+      grid-area: 3 / 1 / 4 / 13;
+      }
+      .div4S {
+      grid-area: 4 / 1 / 5 / 13;
+      }
+      .parentDirect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .div2D, .div10D {
+        display: none;
+      }
+      .div5D, .div6D, .div7D, .div8D, .div9D{
+        width: 340px;
+        
+      }
+      .imagen{
+        width: 250px;
+        height: 250px;
+      }
+      
   }
