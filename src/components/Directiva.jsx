@@ -6,7 +6,7 @@ const Directiva = () => {
     return (
         <div className=' max-h-[100vh] max-w-full parentDirect  '>
             <div className='div10D'>
-            <img className='absolute z-[-1] img' src={Rectangulo} alt="rectangulo" />
+            <img className='absolute z-[-1] img' src={Rectangulo} alt="rectangulo"  />
             </div>
             <div className="div1D ">
                 <h1 className=' bg-fondo1 text-center text-4xl ' >Directiva</h1>

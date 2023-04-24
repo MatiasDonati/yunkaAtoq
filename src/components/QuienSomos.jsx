@@ -2,8 +2,8 @@ import React from 'react'
 
 const QuienSomos = () => {
     return (
-        <div className="pt-[200px] px-20 h-full mb-[150px]">
-            <div className="">
+        <div className="SomosContainer  ">
+            
                 <div className="parentSomos ">
                     <div  className='div1S text-4xl text-blue-900 font-bold font-sans'>
                     <h1>
@@ -34,7 +34,7 @@ const QuienSomos = () => {
                             poco de todo lo que nos brindó.
                         </p>
                     </div>
-                </div>
+                
             </div>
         </div>
     )
