@@ -61,7 +61,7 @@ const NavBar = () => {
           </Link>
         </div>
 
-        <div className="flex-1 text-white pr-10 hidden sm:block">
+        <div className="flex-1 text-white pr-10 hidden md:block">
           <ul className="flex justify-end">
             <li className="h-10 w-16">
               <a target="_blank" href="tel:+5492617234395">
@@ -100,12 +100,12 @@ const NavBar = () => {
           <ul className="flex justify-between">
             <Link
               to="/nosotros"
-              className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
+              className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block"
               onClick={() => scroll.scrollToTop({ duration: 500 })}
             >
               Nosotros
             </Link>
-            <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out">
+            <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block">
               <ModalDonaciones />
             </li>
           </ul>
@@ -113,12 +113,12 @@ const NavBar = () => {
 
         <div className="flex-1 px-20">
           <ul className="flex justify-between">
-            <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-ou">
+            <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block">
               Capacitaciones
             </li>
             {location !== "/nosotros" ? (
               <Link
-                className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
+                className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block"
                 to="form"
                 smooth="true"
                 duration={500}
@@ -128,7 +128,7 @@ const NavBar = () => {
               </Link>
             ) : (
               <Link
-                className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out"
+                className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block"
                 to={"/"}
               >
                 <li>Incorpórate</li>
