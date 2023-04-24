@@ -1,4 +1,5 @@
 import { BsWhatsapp, BsTelephone } from "react-icons/bs";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
 import YunkaLogo from "../assets/YunkaLogo.png";
 import { animateScroll as scroll } from "react-scroll";
@@ -10,6 +11,8 @@ const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [nosotros, setNosotros] = useState(false);
   const location = useLocation().pathname;
+  const [nav, setNav] = useState(false);
+  const handleClick = () => setNav(!nav);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +51,7 @@ const NavBar = () => {
         </div>
 
         <div className=" flex flex-1 justify-center ">
-          <Link to="/" smooth="true" duration={500} className=''>
+          <Link to="/" smooth="true" duration={500} className="">
             <img
               src={YunkaLogo}
               className={`${
@@ -110,6 +113,60 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
+
+        {/* Hamburguer */}
+        <div onClick={handleClick} className="md:hidden z-10">
+          {!nav ? <FaBars /> : <FaTimes />}
+        </div>
+
+        {/* Mobile menu */}
+        <ul
+          className={
+            !nav
+              ? "hidden"
+              : "absolute top-0 left-0 w-full h-screen bg-[#0E385B] flex flex-col justify-center items-center"
+          }
+        >
+          <li className="py-6 text-4xl">
+            <Link>
+            Nosotros
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link>
+              Donaciones
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link
+            >
+              Capacitaciones
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link >
+            Incorpórate
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link
+            >
+             WhatsApp
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link
+            >
+             LinkedIn
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link
+            >
+             Llámanos
+            </Link>
+          </li>
+        </ul>
 
         <div className="flex-1 px-20">
           <ul className="flex justify-between">
