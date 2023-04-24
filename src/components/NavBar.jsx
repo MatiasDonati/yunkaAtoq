@@ -14,6 +14,11 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
+  const ejecutador = () => {
+    handleClick()
+    scroll.scrollToTop({ duration: 500 })
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       window.scrollY > 150 ? setIsScrolled(true) : setIsScrolled(false);
@@ -114,7 +119,8 @@ const NavBar = () => {
           }
         >
           <li className="py-6 text-4xl">
-            <Link>
+            <Link to="/nosotros"
+              onClick={ejecutador}>
             Nosotros
             </Link>
           </li>
