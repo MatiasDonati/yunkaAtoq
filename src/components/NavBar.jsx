@@ -14,10 +14,20 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
+  const [windowWidth, setWindowWidth] = useState(0);
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const ejecutador = () => {
-    handleClick()
-    scroll.scrollToTop({ duration: 500 })
-  }
+    handleClick();
+    scroll.scrollToTop({ duration: 500 });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,12 +47,16 @@ const NavBar = () => {
       {/* Navbar 1era Secciom */}
       <div
         id="top"
-        className="bg-[#0E385B] w-full h-[70px] flex justify-between items-center text-3xl font-bold"
+        className={`bg-[#0E385B] w-full h-[70px] flex justify-between items-center text-3xl font-bold `}
       >
-        <div className="pl-10 flex-1">
+        <div className={`pl-10 flex-1`}>
           <Link to="home" smooth="true" duration={500}>
             <div
-              className="text-white cursor-pointer"
+              className={`${
+                windowWidth < 426
+                  ? "text-white text-[20px]"
+                  : "text-white cursor-pointer"
+              } `}
               // onClick={handleNavClick}
             >
               <Link
@@ -100,13 +114,12 @@ const NavBar = () => {
           </ul>
         </div>
       </div>
- 
 
       {/* Navbar 2da Seccion */}
       {/* Primera opcion */}
       <div className="flex w-full flex-row bg-[#0E385B] h-[50px] items-center border-y-4 text-white text-lg">
         {/* Hamburguer */}
- <div onClick={handleClick} className="md:hidden z-10 ml-10">
+        <div onClick={handleClick} className="md:hidden z-10 ml-10">
           {!nav ? <FaBars /> : <FaTimes />}
         </div>
 
@@ -119,47 +132,30 @@ const NavBar = () => {
           }
         >
           <li className="py-6 text-4xl">
-            <Link to="/nosotros"
-              onClick={ejecutador}>
-            Nosotros
+            <Link to="/nosotros" onClick={ejecutador}>
+              Nosotros
             </Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link>
-              Donaciones
-            </Link>
+            <Link>Donaciones</Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link
-            >
-              Capacitaciones
-            </Link>
+            <Link>Capacitaciones</Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link >
-            Incorpórate
-            </Link>
+            <Link>Incorpórate</Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link
-            >
-             WhatsApp
-            </Link>
+            <Link>WhatsApp</Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link
-            >
-             LinkedIn
-            </Link>
+            <Link>LinkedIn</Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link
-            >
-             Llámanos
-            </Link>
+            <Link>Llámanos</Link>
           </li>
         </ul>
-      <div className="flex-1 px-20 ">
+        <div className="flex-1 px-20 ">
           <ul className="flex justify-between">
             <Link
               to="/nosotros"
@@ -199,9 +195,6 @@ const NavBar = () => {
           </ul>
         </div>
       </div>
-
-
-       
 
       {/* Menu flotante */}
       <div className="hidden lg:flex fixed flex-col bottom-[10%] right-0">
