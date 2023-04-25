@@ -4,7 +4,7 @@ import Logo from "../assets/logo.png"
 const Identidad = () => {
     return (
         <>
-            <div className='h-full p-5 mt-[450px] mb-[200px] md:flex flex-wrap p-0'>
+            <div className='h-full lg:p-5 mt-[450px] mb-[200px] md:flex flex-wrap p-3'>
                 <div className=" text-4xl font-sans ">
                     <h1 className='text-blue-900 font-bold font-sans ml-14'>
                         | Nuestro logo, nuestra identidad
