@@ -303,7 +303,27 @@ textarea[name="message"]::placeholder {
   opacity: 1;
 }
 
-@media (max-width : 768px) {}
+@media (max-width : 768px) {
+  .parentDirect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div2D,
+  .div10D {
+    display: none;
+  }
+
+  .div5D,
+  .div6D,
+  .div7D,
+  .div8D,
+  .div9D {
+    width: 540px;
+
+  }
+}
 
 @media (max-width : 576px) {
   .SomosContainer {

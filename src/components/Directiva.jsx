@@ -18,24 +18,24 @@ const Directiva = () => {
                         <p>Presidente de Yunca Atoq</p>
                     </div>
                     <div className="text-white bg-fondo2 div6D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
-                        <p>"Nunca dejamos a nadie atrás"</p>
-                        <p>Carlos Andres Azcarraga Esquivel</p>
+                        <p>"Siempre listos para ayudar"</p>
+                        <p>David Rojas Cruz</p>
                         <p>Presidente de Yunca Atoq</p>
                     </div>
                     <div className="text-white bg-fondo2 div7D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
-                        <p>"Nunca dejamos a nadie atrás"</p>
-                        <p>Carlos Andres Azcarraga Esquivel</p>
-                        <p>Presidente de Yunca Atoq</p>
+                        <p>"El fuego no espera, actúa rápido"</p>
+                        <p>Claudia Ayala Campos</p>
+                        <p>Ciencia, Investigación y Tecnología</p>
                     </div>
                     <div className="text-white bg-fondo2 div8D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
-                        <p>"Nunca dejamos a nadie atrás"</p>
-                        <p>Carlos Andres Azcarraga Esquivel</p>
+                        <p>“Valentía, honor y sacrificio"</p>
+                        <p>Claudia Hoepfner Loayza</p>
                         <p>Presidente de Yunca Atoq</p>
                     </div>
                     <div className="text-white bg-fondo2 div9D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
-                        <p>"Nunca dejamos a nadie atrás"</p>
-                        <p>Carlos Andres Azcarraga Esquivel</p>
-                        <p>Presidente de Yunca Atoq</p>
+                        <p>“No somos héroes, hacemos lo que es justo"</p>
+                        <p>Jose Pablo Villazón Valdez</p>
+                        <p>Área de Capacitaciones </p>
                     </div>
             </div>
                 <div className='div2D ml-16'>
