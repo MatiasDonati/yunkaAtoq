@@ -65,7 +65,7 @@ const Home = () => {
             <div className="text-zinc-300 text-center text-[20px] italic mt-2">
               COCHABMABA, BOLIVIA
             </div>
-            <div className="text-zinc-300 text-center text-[20px] mx-[300px] italic mt-4">
+            <div className="text-zinc-300 text-center text-[20px] lg:mx-[300px] italic mt-4">
               Nuestro objetivo es ofrecer un servicio de calidad y eficiente a
               la comunidad, y estamos dispuestos a trabajar duro para lograrlo.
               Esperamos tener la oportunidad de colaborar con ustedes en el
@@ -81,7 +81,7 @@ const Home = () => {
       <div className="text-5xl text-center p-10 italic font-light">
         "Para que otros puedan vivir"
       </div>
-      <div className="px-[300px]">
+      <div className="lg:px-[300px] md: pl-4">
         <div className="py-3">
           YUNKA ATOQ es una fundación de protección medioambiental que cuenta
           con un brazo operativo de primera respuesta ante emergencias y
