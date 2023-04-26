@@ -1,6 +1,18 @@
+import { useEffect, useState } from "react";
+
 const GoogleMaps = () => {
+  const [windowWidth, setWindowWidth] = useState(0);
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="flex justify-center items-center p-10">
+    <div className={`flex justify-center items-center p-10 ${windowWidth < 400 && 'pt-64'}`}>
      {/* <div className="mx-[300px] mt-20"> */}
       {/* <div className="bg-red-400 mx-[300px] mb-8 rounded-lg"> */}
           <iframe
