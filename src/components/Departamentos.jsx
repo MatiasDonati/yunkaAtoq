@@ -19,7 +19,7 @@ const Departamentos = () => {
 
   return (
     <div name="especialidades">
-      <div className={`${windowWidth < 600 ? 'px-2' : 'px-[300px] p-20'}`}>
+      <div className={`${windowWidth < 600 ? 'px-2 pb-6' : 'px-[300px] p-20'}`}>
         <div className={`${windowWidth ? 'text-4xl': 'text-5xl'} p-10 font-light mb-20 text-[#0E385B]`}>
           | Especialidades
         </div>
