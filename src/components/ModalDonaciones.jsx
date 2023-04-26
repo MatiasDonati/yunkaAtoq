@@ -109,7 +109,6 @@ const ModalDonaciones = () => {
                 </button>
               </div>
             </div>
-
             <div className="modal-background"></div>
           </div>
         ))}
