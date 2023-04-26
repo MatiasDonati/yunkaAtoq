@@ -69,10 +69,13 @@ const ModalDonaciones = () => {
             onClick={toggleModal}
           >
             <div
-              className="bg-[#0E385B] rounded-lg shadow-md z-20 text-white "
+              className="bg-[#0E385B] rounded-lg shadow-md z-20 text-white"
               onClick={(e) => e.stopPropagation()}
             >
+              <div className="flex justify-center items-center" >
+
               <FaTimes onClick={cerrar} />
+              </div>
               <div>
                 <h1 className="bg-yellow-50 h-full text-center font-nunito-sans font-bold leading-150 text-[#0E385B]">
                   Yunka Atoq te necesita
