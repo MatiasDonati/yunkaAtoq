@@ -407,4 +407,17 @@ textarea[name="message"]::placeholder {
   .div4A {
     grid-area: 2 / 2 / 3 / 3;
   }
+  .parentFaceForm {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+
+  .divF1 {
+    grid-area: 1 / 1 / 6 / 7;
+  }
+
+  .divF2 {
+    grid-area: 7 / 1 / 11 / 7;
+    margin-bottom: 150px;
+  }
 }
