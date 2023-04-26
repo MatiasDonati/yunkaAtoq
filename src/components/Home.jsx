@@ -49,17 +49,17 @@ const Home = () => {
             </div>
 
             {/* Carrusel */}
-            <div className="flex justify-center">
-              <div className=" hidden group-hover:flex absolute top-[120%] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
+            {<div className="flex justify-center">
+              <div className=" hidden group-hover:flex absolute lg:top-[120%] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer md: top-[90%] ">
                 {fotos.map((foto, indice) => (
                   <div key={indice} className="text-2xl cursor-pointer">
                     <RxDash onClick={() => irAFoto(indice)} size={50} />
                   </div>
                 ))}
               </div>
-            </div>
+            </div>}
 
-            <div className="text-zinc-300 text-4xl italic text-center mt-[150px]">
+            <div className="text-zinc-300 text-4xl italic text-center lg:mt-[150px]">
               Bomberos Voluntarios
             </div>
             <div className="text-zinc-300 text-center text-[20px] italic mt-2">
