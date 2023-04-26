@@ -137,7 +137,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link>Donaciones</Link>
+            <Link><ModalDonaciones /></Link>
           </li>
           <li className="py-6 text-4xl">
             <Link>Capacitaciones</Link>
