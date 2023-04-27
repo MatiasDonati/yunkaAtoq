@@ -5,9 +5,9 @@ const SerParte = () => {
   return (
     <div className="bg-gradient-to-t from-[white]">
     <div className="h-full lg:mx-[200px]  ">
-      <div className="text-5xl p-10 font-light text-white">| Te gustaría ser parte?</div>
+      <div className="text-5xl p-10 font-light text-black">| Te gustaría ser parte?</div>
       <div className="lg:mx-[200px]">
-      <div className="lg:text-2xl mb-10 text-white md: text-2xl p-4">
+      <div className="lg:text-2xl mb-10  md: text-2xl p-4 text-black">
         Conviértete en bombero voluntario y conoce la satisfacción de ayudar a
         quienes más lo necesitan. Tu coraje y tus aportes siempre serán
         bienvenidos.
