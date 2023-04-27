@@ -17,10 +17,10 @@ const SerParte = () => {
       </div>
       <div className="ml-4 text-[#0E385B] text-2xl mb-5">Para incorporarte a nuestro equipo es necesario:</div>
       <ul className="list-disc text-[#0E385B] text-2xl" >
-        <li>Documento Nacional de Identidad.</li>
-        <li>Certificado de estudios y/o trabajo.</li>
-        <li>Antecedentes penales o policiales.</li>
-        <li>Aprobar las fases de entrevista.</li>
+        <li className="mb-2">Documento Nacional de Identidad.</li>
+        <li className="mb-2">Certificado de estudios y/o trabajo.</li>
+        <li className="mb-2">Antecedentes penales o policiales.</li>
+        <li className="mb-2">Aprobar las fases de entrevista.</li>
         <li>Exámenes médicos, psicológico y de aptitud física.</li>
       </ul>
       </div>
