@@ -15,6 +15,7 @@
   background-image: url(../src/assets/Home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: aliceblue;
 }
 
 .modal {
@@ -326,6 +327,12 @@ textarea[name="message"]::placeholder {
 }
 
 @media (max-width : 576px) {
+  :root {
+    background-image: url(../src/assets/mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+  }
   .SomosContainer {
     padding-left: 1rem;
     padding-right: 1.5rem;
