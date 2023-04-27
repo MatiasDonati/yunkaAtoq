@@ -135,7 +135,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link><ModalDonaciones /></Link>
+            <Link><ModalDonaciones/></Link>
           </li>
           <li className="py-6 text-4xl">
             <a href="../src/assets/PENSUM DE MATERIAS - YA - Pensum.pdf" target="_blank">Capacitaciones</a>
