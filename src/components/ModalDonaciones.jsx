@@ -73,7 +73,7 @@ const ModalDonaciones = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex justify-center items-center">
-              <FaTimes onClick={cerrar} className="absolute bottom-10 left-8"/>
+              <FaTimes onClick={cerrar} className="absolute top-10 left-8"/>
               </div>
               <div>
                 <div className="bg-[#0E385B] h-[25px] rounded-t-lg">
