@@ -38,7 +38,7 @@ const Departamentos = () => {
           <img
             src={BusquedaYRescate}
             className={`${
-              windowWidth < 590 ? "flex-col w-2/5" : "w-1/5 h-1/5"
+              windowWidth < 590 ? "flex-col w-2/5 mt-4" : "w-1/5 h-1/5"
             }`}
           />
           <div className="p-4 my-6 mx-3 overflow-y-scroll max-h-[150px]">
@@ -71,7 +71,7 @@ const Departamentos = () => {
           <img
             src={Administracion}
             className={`${
-              windowWidth < 590 ? "flex-col w-2/5" : "w-1/5 h-1/5"
+              windowWidth < 590 ? "flex-col w-2/5 mt-4" : "w-1/5 h-1/5"
             }`}
           />
           <div className="p-4 my-6 mx-3 overflow-y-scroll max-h-[150px]">
@@ -109,7 +109,7 @@ const Departamentos = () => {
           <img
             src={Ciencia}
             className={`${
-              windowWidth < 590 ? "flex-col w-2/5" : "w-1/5 h-1/5"
+              windowWidth < 590 ? "flex-col w-2/5 mt-4" : "w-1/5 h-1/5"
             }`}
           />
           <div className="p-4 my-6  mx-3 overflow-y-scroll max-h-[150px]">
@@ -148,7 +148,7 @@ const Departamentos = () => {
           <img
             src={SoporteVital}
             className={`${
-              windowWidth < 590 ? "flex-col w-2/5" : "w-1/5 h-1/5"
+              windowWidth < 590 ? "flex-col w-2/5 mt-4" : "w-1/5 h-1/5"
             }`}
           />
           <div className="p-4 my-6 mx-3 overflow-y-scroll max-h-[150px]">
@@ -182,7 +182,7 @@ const Departamentos = () => {
           <img
             src={Fuego}
             className={`${
-              windowWidth < 590 ? "flex-col w-2/5" : "w-1/5 h-1/5"
+              windowWidth < 590 ? "flex-col w-2/5 mt-4" : "w-1/5 h-1/5"
             }`}
           />
           <div className="p-4 my-6 mx-3 overflow-y-scroll max-h-[150px]">
