@@ -52,12 +52,11 @@ const NavBar = () => {
         <div className={`pl-10 flex-1`}>
           <Link to="home" smooth="true" duration={500}>
             <div
-              className={`${
-                windowWidth < 426
-                  ? "text-white text-[20px]"
-                  : "text-white cursor-pointer"
-              } `}
-              // onClick={handleNavClick}
+              className={`${windowWidth < 426
+                ? "text-white text-[20px]"
+                : "text-white cursor-pointer"
+                } `}
+            // onClick={handleNavClick}
             >
               <Link
                 to={"/"}
@@ -73,11 +72,10 @@ const NavBar = () => {
           <Link to="/" smooth="true" duration={500} className="">
             <img
               src={YunkaLogo}
-              className={`${
-                isScrolled
-                  ? "w-[100px] pt-[40px] transition-all duration-400 ease-in-out hover:w-[110px] hover:pt-[50px]"
-                  : "w-[180px] pt-40 transition-all duration-400 ease-in-out hover:w-[200px]"
-              } cursor-pointer`}
+              className={`${isScrolled
+                ? "w-[100px] pt-[40px] transition-all duration-400 ease-in-out hover:w-[110px] hover:pt-[50px]"
+                : "w-[180px] pt-40 transition-all duration-400 ease-in-out hover:w-[200px]"
+                } cursor-pointer`}
               onClick={() => scroll.scrollToTop({ duration: 500 })}
             />
           </Link>
@@ -86,14 +84,14 @@ const NavBar = () => {
         <div className="flex-1 text-white pr-10 hidden md:block">
           <ul className="flex justify-end">
             <li className="h-10 w-16">
-              <a target="_blank" href="tel:+5492617234395">
+              <a target="_blank" href="tel:+59170776212">
                 <BsTelephone className="hover:text-[40px] transition-all duration-400 ease-in-out" />
               </a>
             </li>
             <li className="h-10 w-16">
               <a
                 target="_blank"
-                href="https://wa.me/5492617234395?text=Hola,%20me%20podrían%20dar%20más%20información%20sobre%20la%20incorporación?"
+                href="https://wa.me/59170776212?text=Hola,%20me%20podrían%20dar%20más%20información%20sobre%20la%20incorporación?"
               >
                 <BsWhatsapp className="hover:text-[40px] transition-all duration-400 ease-in-out" />
               </a>
@@ -140,19 +138,36 @@ const NavBar = () => {
             <Link><ModalDonaciones /></Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link>Capacitaciones</Link>
+            <a href="../src/assets/PENSUM DE MATERIAS - YA - Pensum.pdf" target="_blank">Capacitaciones</a>
           </li>
           <li className="py-6 text-4xl">
             <Link>Incorpórate</Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link>WhatsApp</Link>
+            <a
+              target="_blank"
+              className="flex justify-between items-center w-full"
+              href="https://wa.me/59170776212?text=Hola, me podrían dar más información sobre la incorporación?"
+            >
+              WhatsApp
+            </a>
           </li>
           <li className="py-6 text-4xl">
-            <Link>LinkedIn</Link>
+            <a
+              className="flex justify-between items-center w-full"
+              target="_blank"
+              href="https://www.linkedin.com/in/carlosazcarraga/"
+            >
+              LinkedIn
+            </a>
           </li>
           <li className="py-6 text-4xl">
-            <Link>Llámanos</Link>
+            <a
+              className="flex justify-between items-center w-full"
+              href="tel:59170776212"
+            >
+              Llámanos
+            </a>
           </li>
         </ul>
         <div className="flex-1 px-20 ">
@@ -172,7 +187,8 @@ const NavBar = () => {
         <div className="flex-1 px-20">
           <ul className="flex justify-between">
             <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block">
-              Capacitaciones
+
+              <a href="../src/assets/PENSUM DE MATERIAS - YA - Pensum.pdf" target="_blank">Capacitaciones</a>
             </li>
             {location !== "/nosotros" ? (
               <Link
@@ -202,7 +218,7 @@ const NavBar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:mr-[-10px] hover:rounded-l-full duration-500  text-[#204D70] bg-zinc-300 rounded-tl-[100px]">
             <a
               className="flex justify-between items-center w-full"
-              href="tel:5492617234395"
+              href="tel:59170776212"
             >
               <BsTelephone size={30} />
               LLámanos
@@ -212,7 +228,7 @@ const NavBar = () => {
             <a
               target="_blank"
               className="flex justify-between items-center w-full"
-              href="https://wa.me/5492617234395?text=Hola, me podrían dar más información sobre la incorporación?"
+              href="https://wa.me/59170776212?text=Hola, me podrían dar más información sobre la incorporación?"
             >
               <BsWhatsapp size={30} />
               Mensaje
