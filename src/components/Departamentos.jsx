@@ -19,13 +19,28 @@ const Departamentos = () => {
 
   return (
     <div name="especialidades">
-      <div className={`${windowWidth < 600 ? 'px-2 pb-6' : 'px-[300px] p-20'}`}>
-        <div className={`${windowWidth ? 'text-4xl': 'text-5xl'} p-10 font-light mb-20 text-[#0E385B]`}>
+      <div
+        className={`${windowWidth < 1000 ? "px-2 pb-6" : "px-[300px] p-20"}`}
+      >
+        <div
+          className={`${
+            windowWidth ? "text-4xl" : "text-5xl"
+          } p-10 font-light mb-20 text-[#0E385B]`}
+        >
           | Especialidades
         </div>
         {/*Card 1 */}
-        <div className="rounded-tr-[45px] rounded-bl-[45px] flex border-4 border-[#0E385B]  items-center justify-center">
-          <img src={BusquedaYRescate} className="w-1/5 h-1/5" />
+        <div
+          className={`rounded-tr-[45px] rounded-bl-[45px] flex ${
+            windowWidth < 590 && "flex-col"
+          }  border-4 border-[#0E385B]  items-center justify-center`}
+        >
+          <img
+            src={BusquedaYRescate}
+            className={`${
+              windowWidth < 590 ? "flex-col w-2/5" : "w-1/5 h-1/5"
+            }`}
+          />
           <div className="p-4 my-6 mx-3 overflow-y-scroll max-h-[150px]">
             <p>
               Es importante mantener actualizados los procedimientos y
@@ -48,8 +63,17 @@ const Departamentos = () => {
         </div>
 
         {/*Card  2 */}
-        <div className="rounded-tr-[45px] rounded-bl-[45px] flex mt-8 border-4 border-[#0E385B] items-center justify-center">
-          <img src={Administracion} className="w-1/5 h-1/5" />
+        <div
+          className={`rounded-tr-[45px] rounded-bl-[45px] flex ${
+            windowWidth < 590 && "flex-col"
+          } mt-8 border-4 border-[#0E385B] items-center justify-center`}
+        >
+          <img
+            src={Administracion}
+            className={`${
+              windowWidth < 590 ? "flex-col w-2/5" : "w-1/5 h-1/5"
+            }`}
+          />
           <div className="p-4 my-6 mx-3 overflow-y-scroll max-h-[150px]">
             <p>
               El personal de administración desempeña un papel fundamental en la
@@ -77,8 +101,17 @@ const Departamentos = () => {
         </div>
 
         {/*Card 3 */}
-        <div className="rounded-tr-[45px] rounded-bl-[45px] flex mt-8 border-4 border-[#0E385B] items-center justify-center">
-          <img src={Ciencia} className="w-1/5 h-1/5" />
+        <div
+          className={`rounded-tr-[45px] rounded-bl-[45px] flex ${
+            windowWidth < 590 && "flex-col"
+          } mt-8 border-4 border-[#0E385B] items-center justify-center`}
+        >
+          <img
+            src={Ciencia}
+            className={`${
+              windowWidth < 590 ? "flex-col w-2/5" : "w-1/5 h-1/5"
+            }`}
+          />
           <div className="p-4 my-6 w-4/5 mx-3 overflow-y-scroll max-h-[150px]">
             <p>
               La especialidad de Ciencia, Investigación y Tecnología se enfoca
@@ -107,8 +140,17 @@ const Departamentos = () => {
         </div>
 
         {/*Card 4 */}
-        <div className="rounded-tr-[45px] rounded-bl-[45px] flex mt-8 border-4 border-[#0E385B] items-center justify-center">
-          <img src={SoporteVital} className="w-1/5 h-1/5" />
+        <div
+          className={`rounded-tr-[45px] rounded-bl-[45px] flex ${
+            windowWidth < 590 && "flex-col"
+          } mt-8 border-4 border-[#0E385B] items-center justify-center`}
+        >
+          <img
+            src={SoporteVital}
+            className={`${
+              windowWidth < 590 ? "flex-col w-2/5" : "w-1/5 h-1/5"
+            }`}
+          />
           <div className="p-4 my-6 mx-3 overflow-y-scroll max-h-[150px]">
             <p>
               La especialidad de soporte vital tiene como responsabilidad
@@ -132,8 +174,17 @@ const Departamentos = () => {
         </div>
 
         {/*Card 5 */}
-        <div className=" rounded-tr-[45px] rounded-bl-[45px] flex mt-8 border-4 border-[#0E385B] items-center justify-center">
-          <img src={Fuego} className="w-1/5 h-1/5" />
+        <div
+          className={`rounded-tr-[45px] rounded-bl-[45px] flex ${
+            windowWidth < 590 && "flex-col"
+          } mt-8 border-4 border-[#0E385B] items-center justify-center`}
+        >
+          <img
+            src={Fuego}
+            className={`${
+              windowWidth < 590 ? "flex-col w-2/5" : "w-1/5 h-1/5"
+            }`}
+          />
           <div className="p-4 my-6 mx-3 overflow-y-scroll max-h-[150px]">
             <p>
               La especialidad de fuego se encarga de atender las emergencias
