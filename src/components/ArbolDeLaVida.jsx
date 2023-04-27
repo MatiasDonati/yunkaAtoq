@@ -3,10 +3,23 @@ import FuegoBlanco from "../assets/FuegoBlanco.png";
 import Tierra from "../assets/Tierra.png";
 import Gota from "../assets/Gota.png";
 import Aire from "../assets/Aire.png";
+import { useEffect, useState } from "react";
 
 const ArbolDeLaVida = () => {
+
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="mb: bg-fondo2 pb-4 border-white flex flex-wrap">
+    <div className="mb: bg-[#0E385B] bg-opacity-50 pb-4 border-white flex flex-wrap">
       <div className="h-full text-white  lg:mx-[300px] md:mx-0">
         <div className="text-4xl p-10 font-light">
           | Los elementos del árbol de la vida
@@ -20,8 +33,7 @@ const ArbolDeLaVida = () => {
           <img src={ArbolVida} alt="" className="mx-auto block " />
         </div>
 
-        <div className="flex mb-10 mt-8 parentArbol">
-
+        <div className={`flex mb-10 mt-8 parentArbol`}>
           {/*  Crad */}
           <div className="div1A flex-1 border-2 rounded-lg mr-2 h-[300px] hover:bg-black/40 transition-colors ease-in-out duration-500">
             <div className="text-center p-2 text-2xl">FUEGO</div>
@@ -54,7 +66,6 @@ const ArbolDeLaVida = () => {
               La luz solar es la que permite que el árbol pueda nacer y crecer
             </div>
           </div>
-
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@ const ModalDonaciones = () => {
         (windowWidth > 450 ? (
           <div className="modal" onClick={toggleModal}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              <FaTimes onClick={cerrar} />
+              <FaTimes onClick={cerrar} style={{ color: 'white' }}/>
               <div>
                 <h1>Yunka Atoq te necesita</h1>
               </div>
@@ -50,9 +50,9 @@ const ModalDonaciones = () => {
                 </p>
               </div>
               <button className="btn hover:bg-[#D49105] hover:text-black rounded-full transition-all duration-500 ease-in-out">
-                <BsWhatsapp size={30} />
+                <BsWhatsapp size={30} className="mr-4"/>
                 <a
-                  href="https://wa.me/5492617234395?text=Hola,%20me%20gustaria%20donar."
+                  href="https://wa.me/59170776212?text=Hola,%20me%20gustaria%20donar."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -101,7 +101,7 @@ const ModalDonaciones = () => {
                 <button className="bg-yellow-50 text-[#0E385B] flex hover:bg-[#D49105] hover:text-black rounded-full transition-all duration-500 ease-in-out items-center px-6">
                   <BsWhatsapp size={30} className=""/>
                   <a
-                    href="https://wa.me/5492617234395?text=Hola,%20me%20gustaria%20donar."
+                    href="https://wa.me/59170776212?text=Hola,%20me%20gustaria%20donar."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[18px]"
