@@ -1,8 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 
 const Form = () => {
   const [alerta, setAlerta] = useState(false);
+
+  const [windowWidth, setWindowWidth] = useState(0);
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const sweetAlert = () => {
     setAlerta(!alerta);
@@ -15,7 +25,7 @@ const Form = () => {
   };
 
   return (
-    <div className="h-[500px] mb-8 " name="form">
+    <div className="h-[500px] mb-8" name="form">
       {/* <button
         onClick={sweetAlert}
         className="text-white  mt-5 px-10 bg-[#0E385B] hover:px-20 hover:bg-[#D49105] hover:text-black rounded-full transition-all duration-500 ease-in-out"
@@ -37,7 +47,7 @@ const Form = () => {
         action="https://getform.io/f/34da6974-c381-4202-aeee-4bf9e217e250"
         className=""
       >
-        <h1 className="text-3xl text-center p-20 italic font-light">
+        <h1 className={`text-3xl text-center p-20 italic font-light ${windowWidth < 526 && 'text-[#f0f8ff]'}`}>
           ¿Tenés alguna duda? ¿Querés saber más sobre nosotros o sumarte a
           nuestro equipo?
         </h1>

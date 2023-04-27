@@ -37,7 +37,7 @@ const Formacion = () => {
   ];
 
   return (
-    <div className={`${windowWidth < 470 ? 'bg-[#023763] text-white py-2' : 'bg-[#023763] lg:h-[400px] text-white flex items-center px-20 mb-20 md:flex flex-wrap py-3'} `}>
+    <div className={`${windowWidth < 470 ? 'bg-[#023763] text-white py-14' : 'bg-[#023763] lg:h-[400px] text-white flex items-center px-20 mb-20 md:flex flex-wrap py-3'} `}>
       {formacion.map((el, indice) => (
         <div key={indice} className={`${windowWidth < 470 ? 'flex-1 border-2 rounded-lg m-4 bg-[#052B4A]': 'flex-1 border-2 rounded-lg mr-2 mx-10 bg-[#052B4A] md: m-2'}`}>
           <img src={el.logo} alt="" className="mx-auto block p-2 mb-20 mt-10" />
