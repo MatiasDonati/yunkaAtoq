@@ -20,7 +20,7 @@ const Departamentos = () => {
   return (
     <div name="especialidades">
       <div
-        className={`${windowWidth < 1000 ? "px-2 pb-6" : "px-[300px] p-20"}`}
+        className={`${windowWidth < 1050 ? "px-2 pb-6" : "px-[300px] p-20"}`}
       >
         <div
           className={`${
