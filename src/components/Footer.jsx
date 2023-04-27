@@ -70,9 +70,9 @@ const Footer = () => {
         <div className="flex h-14 bg-[#0E385B] ">
           <div className="bg-[#C28507] flex-1 rounded-tr-full"></div>
           {windowWidth < 693 ? <div className="bg-[#0E385B] flex-1 flex justify-center mt-4 text-zinc-300">
-            Grupo Sarasa ®
+            Grupo SRS ®
           </div> :  <div className="bg-[#0E385B] flex-1 flex justify-center mt-4 text-zinc-300">
-            Creado por Grupo Sarasa ®
+            Creado por Grupo SRS ®
           </div>}
           <div className="bg-[#C28507] flex-1 rounded-tl-full"></div>
         </div>
