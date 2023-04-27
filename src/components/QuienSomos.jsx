@@ -5,7 +5,7 @@ const QuienSomos = () => {
         <div className="SomosContainer  ">
             
                 <div className="parentSomos ">
-                    <div  className='div1S text-4xl text-blue-900 font-bold font-sans'>
+                    <div  className='div1S lg:text-4xl text-blue-900 font-bold font-sans md: text-4xl p-[15px] mt-11'>
                     <h1>
                         | Quiénes somos?
                     </h1>
