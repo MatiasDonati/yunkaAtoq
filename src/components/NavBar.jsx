@@ -212,50 +212,6 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Menu flotante */}
-      <div className="hidden lg:flex fixed flex-col bottom-[10%] right-0">
-        <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:mr-[-10px] hover:rounded-l-full duration-500  text-[#204D70] bg-zinc-300 rounded-tl-[100px]">
-            <a
-              className="flex justify-between items-center w-full"
-              href="tel:59170776212"
-            >
-              <BsTelephone size={30} />
-              LLámanos
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:mr-[-10px] hover:rounded-l-full duration-500  text-[#204D70] bg-zinc-300">
-            <a
-              target="_blank"
-              className="flex justify-between items-center w-full"
-              href="https://wa.me/59170776212?text=Hola, me podrían dar más información sobre la incorporación?"
-            >
-              <BsWhatsapp size={30} />
-              Mensaje
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:mr-[-10px] hover:rounded-l-full duration-500  text-[#204D70] bg-zinc-300 ">
-            <a
-              className="flex justify-between items-center w-full"
-              target="_blank"
-              href="https://www.facebook.com/yunkabo"
-            >
-              <AiOutlineFacebook size={30} />
-              Conócenos
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center mr-[-100px] hover:mr-[-10px] hover:rounded-l-full duration-500  text-[#204D70] bg-zinc-300 rounded-bl-[100px]">
-            <a
-              className="flex justify-between items-center w-full"
-              target="_blank"
-              href="https://www.linkedin.com/in/carlosazcarraga/"
-            >
-              <AiOutlineLinkedin size={30} />
-              Interactua
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
   );
 };
