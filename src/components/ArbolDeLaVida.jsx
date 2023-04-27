@@ -33,9 +33,9 @@ const ArbolDeLaVida = () => {
           <img src={ArbolVida} alt="" className="mx-auto block " />
         </div>
 
-        <div className={`flex mb-10 mt-8 parentArbol`}>
+        <div className={`${windowWidth < 536 ? 'grid grid-cols-2 grid-rows-2 gap-4 mx-2 mb-6' : 'flex mb-10 mt-8'}`}>
           {/*  Crad */}
-          <div className="div1A flex-1 border-2 rounded-lg mr-2 h-[300px] hover:bg-black/40 transition-colors ease-in-out duration-500">
+          <div className={`div1A flex-1 border-2 rounded-lg ${windowWidth > 526 && 'mr-2' } h-[300px] hover:bg-black/40 transition-colors ease-in-out duration-500`}>
             <div className="text-center p-2 text-2xl">FUEGO</div>
             <img src={FuegoBlanco} alt="" className="mx-auto block p-2" />
             <div className="text-center p-2">
@@ -43,7 +43,7 @@ const ArbolDeLaVida = () => {
             </div>
           </div>
           {/*  Crad */}
-          <div className="div2A flex-1 border-2 rounded-lg mr-2 p-2 h-[300px] hover:bg-black/40 transition-colors ease-in-out duration-500">
+          <div className={`div2A flex-1 border-2 rounded-lg ${windowWidth > 526 && 'mr-2' } p-2 h-[300px] hover:bg-black/40 transition-colors ease-in-out duration-500`}>
             <div className="text-center text-2xl">AGUA</div>
             <img src={Gota} alt="" className="mx-auto block p-2" />
             <div className="text-center p-2">
@@ -51,7 +51,7 @@ const ArbolDeLaVida = () => {
             </div>
           </div>
           {/*  Crad */}
-          <div className="div3A flex-1 border-2 rounded-lg mr-2 h-[300px] hover:bg-black/40 transition-colors ease-in-out duration-500">
+          <div className={`div3A flex-1 border-2 rounded-lg ${windowWidth > 526 && 'mr-2' } h-[300px] hover:bg-black/40 transition-colors ease-in-out duration-500`}>
             <div className="text-center p-2 text-2xl">TIERRA</div>
             <img src={Tierra} alt="" className="mx-auto block p-2" />
             <div className="text-center p-2">
@@ -59,7 +59,7 @@ const ArbolDeLaVida = () => {
             </div>
           </div>
           {/*  Crad */}
-          <div className="div4A flex-1 border-2 rounded-lg mr-2 p-2 h-[300px] hover:bg-black/40 transition-colors ease-in-out duration-500">
+          <div className={`div4A flex-1 border-2 rounded-lg ${windowWidth > 526 && 'mr-2' } p-2 h-[300px] hover:bg-black/40 transition-colors ease-in-out duration-500`}>
             <div className="text-center p-2 text-2xl">AIRE</div>
             <img src={Aire} alt="" className="mx-auto block p-2" />
             <div>
