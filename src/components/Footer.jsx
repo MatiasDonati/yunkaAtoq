@@ -32,7 +32,7 @@ const Footer = () => {
               : "flex items-center pr-20 mx-20"
           } `}
         >
-          <div className="pr-2 text-[30px]">
+          <div className={`${windowWidth < 693 ? 'pr-2 text-[20px]' : 'pr-2 text-[30px]'}`}>
             <FiMail />
           </div>
           <div className={`${windowWidth < 693 ? "" : "text-[20px]"}`}>
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex items-center mx-20">
-          <div className="pr-2 text-[30px]">
+          <div className={`${windowWidth < 693 ? 'pr-2 text-[20px]' : 'pr-2 text-[30px]'}`}>
             <BsTelephone />
           </div>
           <div className="text-[20px]">+591 62643328</div>
