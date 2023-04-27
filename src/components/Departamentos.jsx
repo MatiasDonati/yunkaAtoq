@@ -112,7 +112,7 @@ const Departamentos = () => {
               windowWidth < 590 ? "flex-col w-2/5" : "w-1/5 h-1/5"
             }`}
           />
-          <div className="p-4 my-6 w-4/5 mx-3 overflow-y-scroll max-h-[150px]">
+          <div className="p-4 my-6  mx-3 overflow-y-scroll max-h-[150px]">
             <p>
               La especialidad de Ciencia, Investigación y Tecnología se enfoca
               en mejorar la eficacia y seguridad de los bomberos voluntarios en
