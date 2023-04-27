@@ -140,7 +140,7 @@ const NavBar = () => {
           <li className="py-6 text-4xl">
             <a href="../src/assets/PENSUM DE MATERIAS - YA - Pensum.pdf" target="_blank">Capacitaciones</a>
           </li>
-          <li className="py-6 text-4xl">
+          <li className="py-6 text-4xl" onClick={handleClick}>
             <Link>Incorpórate</Link>
           </li>
           <li className="py-6 text-4xl">
@@ -211,6 +211,7 @@ const NavBar = () => {
           </ul>
         </div>
       </div>
+
 
     </div>
   );
