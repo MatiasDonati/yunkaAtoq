@@ -28,10 +28,13 @@ const ArbolDeLaVida = () => {
           Todas estas fuerzas esenciales en nuestro planeta son las que permiten
           dar vida al árbol.
         </div>
-
+        <div className="flex items-center justify-center">
         <div className="image-container">
           <img src={ArbolVida} alt="" className="mx-auto block " />
         </div>
+
+        </div>
+
 
         <div className={`${windowWidth < 536 ? 'grid grid-cols-2 grid-rows-2 gap-4 mx-2 mb-6' : 'flex mb-10 mt-8'}`}>
           {/*  Crad */}
