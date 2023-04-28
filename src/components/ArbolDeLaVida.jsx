@@ -29,7 +29,7 @@ const ArbolDeLaVida = () => {
           dar vida al árbol.
         </div>
 
-        <div className="image-container">
+        <div className="">
           <img src={ArbolVida} alt="" className="mx-auto block " />
         </div>
 
