@@ -4,7 +4,7 @@ import Rectangulo from "../assets/Rectangle-189.png"
 
 const Directiva = () => {
     return (
-        <div className=' max-h-[100vh] max-w-full parentDirect  '>
+        <div className=' max-h-[100vh] max-w-full parentDirect'>
             <div className='div10D'>
             <img className='absolute z-[-1] img' src={Rectangulo} alt="rectangulo"  />
             </div>
