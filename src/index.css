@@ -303,7 +303,7 @@ textarea[name="message"]::placeholder {
 .image-container:hover::before {
   opacity: 1;
 }
-@media (max-width : 1140px){
+@media (max-width : 1180px){
   .parentDirect {
     display: flex;
     flex-direction: column;
