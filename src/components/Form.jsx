@@ -25,7 +25,7 @@ const Form = () => {
   };
 
   return (
-    <div className="h-[500px] mb-8" name="form">
+    <div className="h-[500px] mb-8" name="form" id="formu">
       {/* <button
         onClick={sweetAlert}
         className="text-white  mt-5 px-10 bg-[#0E385B] hover:px-20 hover:bg-[#D49105] hover:text-black rounded-full transition-all duration-500 ease-in-out"

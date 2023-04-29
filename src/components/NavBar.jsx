@@ -52,11 +52,12 @@ const NavBar = () => {
         <div className={`pl-10 flex-1`}>
           <Link to="home" smooth="true" duration={500}>
             <div
-              className={`${windowWidth < 426
-                ? "text-white text-[20px]"
-                : "text-white cursor-pointer"
-                } `}
-            // onClick={handleNavClick}
+              className={`${
+                windowWidth < 426
+                  ? "text-white text-[20px]"
+                  : "text-white cursor-pointer"
+              } `}
+              // onClick={handleNavClick}
             >
               <Link
                 to={"/"}
@@ -72,10 +73,11 @@ const NavBar = () => {
           <Link to="/" smooth="true" duration={500} className="">
             <img
               src={YunkaLogo}
-              className={`${isScrolled
-                ? "w-[100px] pt-[40px] transition-all duration-400 ease-in-out hover:w-[110px] hover:pt-[50px]"
-                : "w-[180px] pt-40 transition-all duration-400 ease-in-out hover:w-[200px]"
-                } cursor-pointer`}
+              className={`${
+                isScrolled
+                  ? "w-[100px] pt-[40px] transition-all duration-400 ease-in-out hover:w-[110px] hover:pt-[50px]"
+                  : "w-[180px] pt-40 transition-all duration-400 ease-in-out hover:w-[200px]"
+              } cursor-pointer`}
               onClick={() => scroll.scrollToTop({ duration: 500 })}
             />
           </Link>
@@ -135,13 +137,20 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link><ModalDonaciones /></Link>
+            <Link>
+              <ModalDonaciones />
+            </Link>
           </li>
           <li className="py-6 text-4xl">
-            <a href="../src/assets/PENSUM DE MATERIAS - YA - Pensum.pdf" target="_blank">Capacitaciones</a>
+            <a
+              href="../src/assets/PENSUM DE MATERIAS - YA - Pensum.pdf"
+              target="_blank"
+            >
+              Capacitaciones
+            </a>
           </li>
           <li className="py-6 text-4xl" onClick={handleClick}>
-            <Link>Incorpórate</Link>
+            <a href="#formu">Incorpórate</a>
           </li>
           <li className="py-6 text-4xl">
             <a
@@ -187,32 +196,28 @@ const NavBar = () => {
         <div className="flex-1 px-20">
           <ul className="flex justify-between">
             <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block">
-
-              <a href="../src/assets/PENSUM DE MATERIAS - YA - Pensum.pdf" target="_blank">Capacitaciones</a>
+              <a
+                href="../src/assets/PENSUM DE MATERIAS - YA - Pensum.pdf"
+                target="_blank"
+              >
+                Capacitaciones
+              </a>
             </li>
             {location !== "/nosotros" ? (
-              <Link
+              <a
+                href="#formu"
                 className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block"
-                to="form"
-                smooth="true"
-                duration={500}
-                onClick={irAlFormulario}
               >
                 <li>Incorpórate</li>
-              </Link>
+              </a>
             ) : (
-              <Link
-                className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block"
-                to={"/"}
-              >
-                <li>Incorpórate</li>
-              </Link>
+              <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block">
+                Incorpórate
+              </li>
             )}
           </ul>
         </div>
       </div>
-
-
     </div>
   );
 };
