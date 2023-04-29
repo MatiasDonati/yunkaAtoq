@@ -38,9 +38,6 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const irAlFormulario = () => {
-    location === "/nosotros" ? setNosotros(true) : setNosotros(false);
-  };
 
   return (
     <div className="fixed w-full items-center z-10">
@@ -149,9 +146,12 @@ const NavBar = () => {
               Capacitaciones
             </a>
           </li>
-          <li className="py-6 text-4xl" onClick={handleClick}>
+          {location !== "/nosotros" ?           <li className="py-6 text-4xl" onClick={handleClick}>
             <a href="#formu">Incorpórate</a>
-          </li>
+          </li> :           <li className="py-6 text-4xl" onClick={handleClick}>
+            <a href="/">Incorpórate</a>
+          </li> }
+
           <li className="py-6 text-4xl">
             <a
               target="_blank"
@@ -211,9 +211,12 @@ const NavBar = () => {
                 <li>Incorpórate</li>
               </a>
             ) : (
-              <li className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block">
-                Incorpórate
-              </li>
+              <a
+                href="/"
+                className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block"
+              >
+                <li>Incorpórate</li>
+              </a>
             )}
           </ul>
         </div>
