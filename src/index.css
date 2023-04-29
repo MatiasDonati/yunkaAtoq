@@ -309,6 +309,7 @@ textarea[name="message"]::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 45px;
   }
 
   .div2D,
@@ -366,6 +367,7 @@ textarea[name="message"]::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 45px;
   }
 
   .div2D,
