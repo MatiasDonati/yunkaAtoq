@@ -146,10 +146,10 @@ const NavBar = () => {
               Capacitaciones
             </a>
           </li>
-          {location !== "/nosotros" ?           <li className="py-6 text-4xl" onClick={handleClick}>
-            <a href="#formu">Incorpórate</a>
+          {location !== "/nosotros" ?  <li className="py-6 text-4xl" onClick={handleClick}>
+            <a href="#form">Incorpórate</a>
           </li> :           <li className="py-6 text-4xl" onClick={handleClick}>
-            <a href="/">Incorpórate</a>
+            <a href="#form">Incorpórate</a>
           </li> }
 
           <li className="py-6 text-4xl">
@@ -205,14 +205,14 @@ const NavBar = () => {
             </li>
             {location !== "/nosotros" ? (
               <a
-                href="#formu"
+                href="#form"
                 className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block"
               >
                 <li>Incorpórate</li>
               </a>
             ) : (
               <a
-                href="/"
+                href="#form"
                 className="flex-1 text-center hover:text-[20px] transition-all duration-400 ease-in-out hidden md:block"
               >
                 <li>Incorpórate</li>

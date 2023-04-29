@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Form = () => {
   const [alerta, setAlerta] = useState(false);
+  const location = useLocation().pathname
 
   const [windowWidth, setWindowWidth] = useState(0);
   useEffect(() => {
@@ -25,23 +27,7 @@ const Form = () => {
   };
 
   return (
-    <div className="h-[500px] mb-8" name="form" id="formu">
-      {/* <button
-        onClick={sweetAlert}
-        className="text-white  mt-5 px-10 bg-[#0E385B] hover:px-20 hover:bg-[#D49105] hover:text-black rounded-full transition-all duration-500 ease-in-out"
-      >
-        hola
-      </button>
-      {alerta &&
-        Swal.fire({
-          position: "center",
-          icon: "success",
-          title:
-            "Muchas gracias por contactarnos!\nEn breve nos pondremos en contacto.",
-          showConfirmButton: false,
-          timer: 1000,
-        })} */}
-
+    <div className={`${location === '/nosotros' ? 'pb-[100px] bg-white' : 'h-[500px] mb-8'}`} name="form" id="form">
       <form
         method="POST"
         action="https://getform.io/f/34da6974-c381-4202-aeee-4bf9e217e250"

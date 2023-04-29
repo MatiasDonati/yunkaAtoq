@@ -5,6 +5,7 @@ import QuienSomos from "./QuienSomos";
 import Directiva from "./Directiva";
 import SerParte from "./SerParte";
 import Identidad from "./Identidad";
+import Form from "./Form"
 
 const Nosotros = () => {
     return (
@@ -15,6 +16,7 @@ const Nosotros = () => {
             <PartesLogo />
             <ArbolDeLaVida />
             <SerParte />
+            <Form />
         </div>
     );
 };
