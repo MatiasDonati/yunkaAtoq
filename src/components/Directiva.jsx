@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Foto from "../assets/Group-38.png"
 import Rectangulo from "../assets/Rectangle-189.png"
 
 const Directiva = () => {
+
+    const [windowWidth, setWindowWidth] = useState(0);
+    useEffect(() => {
+      function handleResize() {
+        setWindowWidth(window.innerWidth);
+      }
+      handleResize();
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <div className=' max-h-[100vh] max-w-full parentDirect'>
             <div className='div10D'>
             <img className='absolute z-[-1] img' src={Rectangulo} alt="rectangulo"  />
             </div>
             <div className="div1D ">
-                <h1 className=' bg-fondo1 text-center text-4xl ' >Directiva</h1>
+                <h1 className={`${windowWidth < 729 ? ' text-center text-4xl ':'bg-fondo1 text-center text-4xl ' } `} >Directiva</h1>
             </div>
                 <div className="div3D flex flex-col  items-center ">
                     <div className="text-white bg-fondo2 div5D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
