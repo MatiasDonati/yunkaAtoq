@@ -9,7 +9,7 @@ const Directiva = () => {
             <img className='absolute z-[-1] img' src={Rectangulo} alt="rectangulo"  />
             </div>
             <div className="div1D ">
-                <h1 className=' bg-fondo1 text-center text-4xl ' >Directiva</h1>
+                <h1 className=' bg-fondo1 text-center text-4xl -mt-5 ' >Directiva</h1>
             </div>
                 <div className="div3D flex flex-col  items-center ">
                     <div className="text-white bg-fondo2 div5D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">

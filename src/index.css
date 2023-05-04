@@ -279,7 +279,7 @@ textarea[name="message"]::placeholder {
 }
 
 .div10D {
-  grid-area: 1 / 3 / 9 / 12;
+  grid-area: 1 / 3 / 8 / 12;
 }
 
 .image-container {
@@ -303,7 +303,7 @@ textarea[name="message"]::placeholder {
 .image-container:hover::before {
   opacity: 1;
 }
-@media (max-width : 1180px){
+@media (max-width : 118o0px){
   .parentDirect {
     display: flex;
     flex-direction: column;
@@ -323,6 +323,56 @@ textarea[name="message"]::placeholder {
   .div9D {
     width: 540px;
 
+  }
+}
+@media (max-width : 1950px) {
+  .parentDirect {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 21px;
+    grid-row-gap: 16px;
+  }
+  
+  .div1D {
+    grid-area: 1 / 6 / 2 / 8;
+  }
+  
+  .div2D {
+    grid-area: 2 / 8 / 9 / 13;
+  }
+  
+  .div3D {
+    grid-area: 2 / 1 / 9 / 7;
+  }
+  
+  .div4D {
+    grid-area: 3 / 8 / 8 / 12;
+  }
+  .div4D img{
+    padding:0;
+  }
+  .div5D {
+    grid-area: 3 / 2 / 4 / 6;
+  }
+  
+  .div6D {
+    grid-area: 4 / 2 / 5 / 6;
+  }
+  
+  .div7D {
+    grid-area: 5 / 2 / 6 / 6;
+  }
+  
+  .div8D {
+    grid-area: 6 / 2 / 7 / 6;
+  }
+  
+  .div9D {
+    grid-area: 7 / 2 / 8 / 6;
+  }
+  
+  .div10D {
+    grid-area: 1 / 4 / 8 / 12;
   }
 }
 @media (max-width : 768px) {

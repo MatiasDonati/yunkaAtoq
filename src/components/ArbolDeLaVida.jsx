@@ -21,7 +21,7 @@ const ArbolDeLaVida = () => {
   return (
     <div className="mb: bg-[#0E385B] bg-opacity-50 pb-4 border-white flex flex-wrap">
       <div className="h-full text-white  lg:mx-[300px] md:mx-0">
-        <div className="text-4xl p-10 font-light">
+        <div className="text-4xl p-10 font-bold">
           | Los elementos del árbol de la vida
         </div>
         <div className="text-center lg:text-2xl mb-10 md:text-xl p-4">

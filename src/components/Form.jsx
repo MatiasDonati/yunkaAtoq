@@ -33,8 +33,8 @@ const Form = () => {
         action="https://getform.io/f/34da6974-c381-4202-aeee-4bf9e217e250"
         className=""
       >
-        <h1 className={`text-3xl text-center p-20 italic font-light ${windowWidth < 526 && 'text-black'}`}>
-          ¿Tenés alguna duda? ¿Querés saber más sobre nosotros o sumarte a
+        <h1 className={`text-3xl text-center p-20 italic font-semibold ${windowWidth < 526 && 'text-black'}`}>
+          ¿Tienes alguna duda? ¿Quieres saber más sobre nosotros o incorporarte a
           nuestro equipo?
         </h1>
         <div className="flex flex-col">

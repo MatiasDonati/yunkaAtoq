@@ -36,14 +36,16 @@ const Footer = () => {
             <FiMail />
           </div>
           <div className={`${windowWidth < 693 ? "" : "text-[20px]"}`}>
-            informaciones@yunkaatoq.org
+            <a href="mailto:informaciones@yunkaatuq.org" target="a_blank" >informaciones@yunkaatuq.org</a>
           </div>
         </div>
         <div className="flex items-center mx-20">
           <div className={`${windowWidth < 693 ? 'pr-2 text-[20px]' : 'pr-2 text-[30px]'}`}>
             <BsTelephone />
           </div>
-          <div className="text-[20px]">+591 62643328</div>
+          <div className="text-[20px]">
+            <a href="tel:+591 62643328">+591 62643328</a>
+          </div>
         </div>
       </div>
 

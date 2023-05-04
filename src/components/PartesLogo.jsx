@@ -18,7 +18,6 @@ const PartesLogo = () => {
       wrapAround: true,
       prevNextButtons: true,
       pageDots: false,
-      autoPlay: 3000,
       initialIndex: 0,
       dragThreshold: 10,
       selectedAttraction: 0.1,
