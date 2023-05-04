@@ -1,46 +1,57 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Foto from "../assets/Group-38.png"
 import Rectangulo from "../assets/Rectangle-189.png"
 
 const Directiva = () => {
+
+    const [windowWidth, setWindowWidth] = useState(0);
+    useEffect(() => {
+        function handleResize() {
+            setWindowWidth(window.innerWidth);
+        }
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <div className=' max-h-[100vh] max-w-full parentDirect'>
             <div className='div10D'>
-            <img className='absolute z-[-1] img' src={Rectangulo} alt="rectangulo"  />
+                <img className='absolute z-[-1] img' src={Rectangulo} alt="rectangulo" />
             </div>
             <div className="div1D ">
-                <h1 className=' bg-fondo1 text-center text-4xl -mt-5 ' >Directiva</h1>
+                <h1 className={`${windowWidth < 729 ? ' text-center text-4xl -mt-5 ml-3 ' : 'bg-fondo1 text-center text-4xl -mt-5 ml-[40px] w-[155px]'} `} >Directiva</h1>
             </div>
-                <div className="div3D flex flex-col  items-center ">
-                    <div className="text-white bg-fondo2 div5D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
-                        <p>"Nunca dejamos a nadie atrás"</p>
-                        <p>Carlos Andres Azcarraga Esquivel</p>
-                        <p>Presidente de Yunca Atoq</p>
-                    </div>
-                    <div className="text-white bg-fondo2 div6D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
-                        <p>"Siempre listos para ayudar"</p>
-                        <p>David Rojas Cruz</p>
-                        <p>Presidente de Yunca Atoq</p>
-                    </div>
-                    <div className="text-white bg-fondo2 div7D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
-                        <p>"El fuego no espera, actúa rápido"</p>
-                        <p>Claudia Ayala Campos</p>
-                        <p>Ciencia, Investigación y Tecnología</p>
-                    </div>
-                    <div className="text-white bg-fondo2 div8D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
-                        <p>“Valentía, honor y sacrificio"</p>
-                        <p>Claudia Hoepfner Loayza</p>
-                        <p>Presidente de Yunca Atoq</p>
-                    </div>
-                    <div className="text-white bg-fondo2 div9D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
-                        <p>“No somos héroes, hacemos lo que es justo"</p>
-                        <p>Jose Pablo Villazón Valdez</p>
-                        <p>Área de Capacitaciones </p>
-                    </div>
-            </div>
-                <div className='div2D ml-16'>
-                    <img className='div4D' src={Foto} alt="bomberos" />
+            <div className="div3D flex flex-col  items-center ">
+                <div className="text-white bg-fondo2 div5D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
+                    <p>"Nunca dejamos a nadie atrás"</p>
+                    <p>Carlos Andres Azcarraga Esquivel</p>
+                    <p>Presidente de Yunca Atoq</p>
                 </div>
+                <div className="text-white bg-fondo2 div6D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
+                    <p>"Siempre listos para ayudar"</p>
+                    <p>David Rojas Cruz</p>
+                    <p>Presidente de Yunca Atoq</p>
+                </div>
+                <div className="text-white bg-fondo2 div7D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
+                    <p>"El fuego no espera, actúa rápido"</p>
+                    <p>Claudia Ayala Campos</p>
+                    <p>Ciencia, Investigación y Tecnología</p>
+                </div>
+                <div className="text-white bg-fondo2 div8D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
+                    <p>“Valentía, honor y sacrificio"</p>
+                    <p>Claudia Hoepfner Loayza</p>
+                    <p>Presidente de Yunca Atoq</p>
+                </div>
+                <div className="text-white bg-fondo2 div9D my-2 text-center text-2xl h-[161px] w-[580px] flex flex-col items-center justify-center">
+                    <p>“No somos héroes, hacemos lo que es justo"</p>
+                    <p>Jose Pablo Villazón Valdez</p>
+                    <p>Área de Capacitaciones </p>
+                </div>
+            </div>
+            <div className='div2D ml-16 mt-[5px]'>
+                <img className='div4D' src={Foto} alt="bomberos" />
+            </div>
         </div>
     )
 }
