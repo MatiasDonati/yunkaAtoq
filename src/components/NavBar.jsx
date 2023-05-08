@@ -179,6 +179,7 @@ const NavBar = () => {
             </a>
           </li>
         </ul>
+
         <div className="flex-1 px-20 ">
           <ul className="flex justify-between">
             <Link
