@@ -103,7 +103,7 @@ const NavBar = () => {
             <li className="h-10 w-16">
               <a
                 target="_blank"
-                href="https://www.linkedin.com/in/carlosazcarraga/"
+                href="https://www.linkedin.com/company/yunkabo/"
               >
                 <AiOutlineLinkedin className="hover:text-[40px] transition-all duration-400 ease-in-out" />
               </a>
